@@ -1,0 +1,20 @@
+[
+    {"id":"1",
+    "lastName":"armand", 
+    "firstName":"konexio",
+    "city":"Paris",
+    "skills":["html ","css ","javascrip"]
+},
+    {"id":"2",
+    "lastName":"abdallah", 
+    "firstName":"konexio",
+    "city":"Lyon",
+    "skills":["react ","nodeJs ","javascrip"]
+},
+    {"id":"3",
+    "lastName":"armand", 
+    "firstName":"konexio",
+    "city":"Marseille",
+    "skills":["php ","mongoDb ","javascrip"]
+}
+]
