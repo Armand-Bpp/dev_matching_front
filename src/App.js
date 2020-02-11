@@ -1,13 +1,15 @@
 import React from 'react';
+import Rendu from './layouts/Rendu';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class  App extends React.Component{
-  render(){
-    return(
-      <div>
-        hello word
-      </div>
-    )
-  }
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <Rendu />
+    </div>
+  );
 }
 
 export default App;
