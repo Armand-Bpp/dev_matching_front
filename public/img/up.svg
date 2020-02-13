@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="364.743" viewBox="0 0 181 364.743">
+  <g id="Groupe_38" data-name="Groupe 38" transform="translate(-876 -1086.257)">
+    <g id="Rectangle_89" data-name="Rectangle 89" transform="translate(876 1187)" fill="none" stroke="#6c63ff" stroke-width="6">
+      <rect width="181" height="264" rx="90.5" stroke="none"/>
+      <rect x="3" y="3" width="175" height="258" rx="87.5" fill="none"/>
+    </g>
+    <line id="Ligne_28" data-name="Ligne 28" y2="118" transform="translate(966.5 1190.5)" fill="none" stroke="#6c63ff" stroke-linecap="round" stroke-width="6"/>
+    <line id="Ligne_29" data-name="Ligne 29" y2="75" transform="translate(966.5 1090.727)" fill="none" stroke="#6c63ff" stroke-linecap="round" stroke-width="6"/>
+    <line id="Ligne_30" data-name="Ligne 30" x1="29.105" y2="28.227" transform="translate(936.5 1090.5)" fill="none" stroke="#6c63ff" stroke-linecap="round" stroke-width="6"/>
+    <line id="Ligne_31" data-name="Ligne 31" x2="28.105" y2="28.227" transform="translate(967.396 1090.5)" fill="none" stroke="#6c63ff" stroke-linecap="round" stroke-width="6"/>
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="translate(955 1330)" fill="none" stroke="#6c63ff" stroke-width="2">
+      <circle cx="11" cy="11" r="11" stroke="none"/>
+      <circle cx="11" cy="11" r="10" fill="none"/>
+    </g>
+  </g>
+</svg>

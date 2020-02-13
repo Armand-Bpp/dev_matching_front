@@ -1,37 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Register from '../components/core/Register' 
 
-
-const Container = styled.div`
-  body{
-    color : #535461;
-  };
-
-  html {
-    scroll-behavior: smooth;
-  };
-
-  h1 {
-    font-size: 60px;
-  };
-
-  .intro {
-    font-size: 60px;
-  };
-
-
-  .ligne {
-    background-color: #6C63FF;
-    height: 1px;
-    border: none;
-  };
-
-  .btn{
-    border-radius: 50px;
-    background: #6C63FF;
-    color : white;
-  };
-`;
 
 class Home extends React.Component {
 
@@ -74,8 +44,13 @@ class Home extends React.Component {
                       <img className="img-fluid imghome" src="img/home.png" />
                   </div>
                   <div className="col-12 col-md-4 col-lg-4">
-                      <h1 className="dev">Dev</h1>
+                      <Register />
                   </div>
+              </div>
+              <div className="text-center mt-5">
+                <a className="navbar-brand" href="#howto">
+                    <img src="img/down.svg" width="40" className="d-inline-block text-center align-top" alt="" />
+                </a>
               </div>
           </div>
           <div className="container scrolling-box">
@@ -109,7 +84,7 @@ class Home extends React.Component {
                       vous n'aurez plus qu'à choisir les meilleurs. Utilisez
                       notre outil pour mettre en ligne vos offres d'emplois.     
                       </p>
-                      <button type="button" className="btn btn-lg btn-block shadow">Crée un profil entreprise</button>
+                      <button type="button" className="btn join  btn-lg  btn-block shadow">Crée un profil entreprise</button>
                   </div>
               </div>
               <div className="row" id="dev">
@@ -125,7 +100,7 @@ class Home extends React.Component {
                       d'entreprises et des jobs qui matchent à plus de 80%,
                       lancez-vous dès maintenant pour gagner du temps.   
                       </p>
-                      <button type="button" className="btn btn-lg btn-block shadow">Crée un profil développeur</button>
+                      <button type="button" className="btn join btn-lg btn-block shadow">Crée un profil développeur</button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-6 mt-5 pt-5">
                       <img className="img-fluid" src="img/dev.svg" />
@@ -146,8 +121,13 @@ class Home extends React.Component {
                       et petites instances ainsi que les collaborateurs qui les
                       composent.      
                       </p>
-                      <button type="button" className="btn btn-lg btn-block shadow">Rejoindre l'aventure</button>
+                      <button type="button" className="btn join btn-lg btn-block shadow">Rejoindre l'aventure</button>
                   </div>
+              </div>
+              <div className="text-center mt-5">
+                <a className="navbar-brand" href="#">
+                    <img src="img/up.svg" width="40" className="d-inline-block text-center align-top" alt="" />
+                </a>
               </div>
               <div className="container mt-5 bg-dark rounded">
                   <p className="text-center text-white pt-3 pb-3">&copy;Created by Dev Matcher</p>
