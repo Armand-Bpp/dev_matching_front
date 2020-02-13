@@ -23,9 +23,6 @@ function App() {
                   <Route path="/matching">
                     <Matching/>
                   </Route>
-                  <Route path="/faq">
-                    <Faq />
-                  </Route>
                   <Route path="/">
                     <Home />
                   </Route>
