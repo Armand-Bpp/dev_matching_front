@@ -1,20 +1,15 @@
 import React from 'react';
-
+import Card from '../dev/Card';
+// import Button from '../button/Button'
 class Matching extends React.Component{
     constructor(props) {
         super(props);
     
         this.state={
-            list:[{
-            id:"",
-            lastName:"", 
-            firstName:"",
-            city:"",
-            skills:["","",""]
-            }]
+            listDev:[]
         }
-        this.onWrongAction=this.onWrongAction.bind(this);
-        this.renderList=this.renderList.bind(this);
+        this.onWrongActionDev=this.onWrongActionDev.bind(this);
+        this.renderListDev=this.renderListDev.bind(this);
       }
 
       
@@ -27,24 +22,32 @@ class Matching extends React.Component{
             .then(json => {
                 console.log('json', json);
                 this.setState({
-                    list: json.results
+                    listDev: json
                 });
             });
  
     }
 
 
-    onWrongAction() {
-        this.state.list.push('a');
+    onWrongActionDev() {
+        this.state.listDev.push('a');
         this.setState({
-            list: this.state.list
+            listDev: this.state.listDev
         });
     }
 
-    renderList(){
-        return this.state.list.map(() => {
+    renderListDev(){
+        return this.state.listDev.map((listDev) => {
             return(
-            <p key ={this.state.id}>{this.state.lastName}  {this.state.firstName} {this.state.city} {this.state.skills}  </p>
+            // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
+            <Card 
+            
+             firstName = {listDev.firstName}
+             lastName = {listDev.lastName}
+             city={listDev.city}
+             skills= {listDev.skills}
+            
+            />
             )
         })
     }
@@ -52,7 +55,7 @@ class Matching extends React.Component{
         return(
             <div>
                 <h1>List Matching</h1>
-                {this.renderList()}
+                {this.renderListDev()}
             </div>
         )
     }
