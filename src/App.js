@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './layouts/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Faq from './components/pages/Faq';
-import Jobs from './components/pages/Jobs';
+import ListJobs from './components/pages/ListJobs';
 import Matching from './components/pages/Matching';
 import Favoris from './components/pages/Favoris';
 import ProfilDev from './components/pages/ProfilDev';
@@ -18,8 +18,8 @@ function App() {
                   <Route path="/favoris">
                     <Favoris />
                   </Route>
-                  <Route path="/jobs">
-                    <Jobs/>
+                  <Route path="/listjobs">
+                    <ListJobs/>
                   </Route>
                   <Route path="/matching">
                     <Matching/>
