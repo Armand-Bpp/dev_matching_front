@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/Button';
 
 
 // import Button from '../button/Button';
@@ -6,11 +7,20 @@ import React from 'react';
 class Card extends React.Component {
     constructor(props){
         super(props)
-        // this.state = {
-        //     lastName:this.props.lastName
-        // }
+        this.state = {
+       
     }
     
+    }
+    
+
+    // onClickCard () {
+    //     this.saveToLocalStorage();
+    //     this.setState({
+    //         onClick: this.state.onClickCard + 1
+    //     });
+    // }
+
     render(){
         return(
             <div class="row">
@@ -23,7 +33,9 @@ class Card extends React.Component {
                         <p class="card-text">{this.props.contracts}</p>
                         <p class="card-text">{this.props.date}</p>
                         <p class="card-text">{this.props.skills }</p>
-                        <a href="#" class="btn btn-primary">Ajouter aux favoris</a>
+                        <Button onClickFn={this.onsubmit}>
+                            ajouter aux favoris
+                        </Button>
                     </div>
                     </div>
                 </div>

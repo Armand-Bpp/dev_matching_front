@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../entreprise/Card';
-
+import Button from '../button/Button';
 
 class Jobs extends React.Component{
     constructor(props){
@@ -8,7 +8,7 @@ class Jobs extends React.Component{
         this.state={
             listEn:[]
     }
-    this.onWrongActionEn=this.onWrongActionEn.bind(this);
+    // this.onWrongActionEn=this.onWrongActionEn.bind(this);
     this.renderListEn=this.renderListEn.bind(this);
     }
 
@@ -26,13 +26,21 @@ class Jobs extends React.Component{
         });
         
     }
-
-    onWrongActionEn(){
-        this.state.listEn.push('a');
-        this.setState({
-            listEn: this.state.listEn
-        });
-    }
+    // saveToLocalStorage(listId) {
+    //     console.log('listEn', listId);
+    //     const localListStr = localStorage.getItem('favoris') || '[]';
+    //     const localList = JSON.parse(localListStr);
+    //     if (localList.includes(listId) === false) {
+    //         localList.push(listId);
+    //         localStorage.setItem('favoris', JSON.stringify(localList));
+    //     }
+    // }
+    // onWrongActionEn(){
+    //     this.state.listEn.push('a');
+    //     this.setState({
+    //         listEn: this.state.listEn
+    //     });
+    // }
     
     renderListEn(){
         return this.state.listEn.map((listEn) => {

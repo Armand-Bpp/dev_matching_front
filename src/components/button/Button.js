@@ -1,14 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-const Button = (props) => {
-    const classNames = `btn ${props.isSelected ? 'btn-primary' : 'btn-outline-danger'}`
-    return (
-        <button
-            className={classNames}
-            onClick={props.onClickFn}>
-            {props.children}
-        </button>
-    );
+class Button extends React.Component{
+
+    render(){
+        return(
+            <div>
+                <button className="btn btn-outline-primary"
+                onClick={this.props.onClickFn}
+                >
+                    {this.props.children}
+
+                </button>
+
+            </div>
+
+        )
+    }
 }
 
-export default Button;
+
+export default Button ;
