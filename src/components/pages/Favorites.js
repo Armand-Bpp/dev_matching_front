@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../favoris/Card';
+import Card from '../favorites/Card';
 
 
-class Favoris extends React.Component {
+class Favorites extends React.Component {
     constructor(props) {
         super(props);
     
@@ -29,4 +29,4 @@ class Favoris extends React.Component {
 }
 
 
-export default Favoris;
+export default Favorites;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../button/Button';
+import "../../components/pages/ListJobs.css"
 
 
 // import Button from '../button/Button';
@@ -23,23 +24,39 @@ class Card extends React.Component {
 
     render(){
         return(
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{this.props.compagnyName}</h5>
-                        <p class="card-text">{this.props.title}</p>
-                        <p class="card-text">{this.props.city}</p>
-                        <p class="card-text">{this.props.contracts}</p>
-                        <p class="card-text">{this.props.date}</p>
-                        <p class="card-text">{this.props.skills }</p>
+            <div className="container-fluid">
+            <div className="row">
+                <div className="offset-3 col-6 ">
+                    <div className="card car">
+                    <div className="card-body list">
+
+
+                        <div>
+                              <h5 className="card-title">{this.props.compagnyName}</h5>
+                              <h6 className="card-text">{this.props.title}</h6>
+                        </div>
+                        
+                      
+                       <div>
+                           <h6 className="card-text">{this.props.city}</h6>
+                            <h6 className="card-text">{this.props.contracts}</h6>
+                            <h6 className="card-text">{this.props.date}</h6>
+                       </div>
+                       
+                       
+                        <p className="card-text">{this.props.skills }</p>
+
+
+
                         <Button onClickFn={this.onsubmit}>
                             ajouter aux favoris
                         </Button>
+
                     </div>
                     </div>
                 </div>
             </div>
+        </div>
         )
         
         

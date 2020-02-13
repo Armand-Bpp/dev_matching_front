@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../dev/Card';
+import  './Matching.css'
 // import Button from '../button/Button'
 class Matching extends React.Component{
     constructor(props) {
@@ -29,12 +30,12 @@ class Matching extends React.Component{
     }
 
 
-    onWrongActionDev() {
-        this.state.listDev.push('a');
-        this.setState({
-            listDev: this.state.listDev
-        });
-    }
+    // onWrongActionDev() {
+    //     this.state.listDev.push('a');
+    //     this.setState({
+    //         listDev: this.state.listDev
+    //     });
+    // }
 
     renderListDev(){
         return this.state.listDev.map((listDev) => {
@@ -53,9 +54,15 @@ class Matching extends React.Component{
     }
     render(){
         return(
-            <div>
-                <h1>List Matching</h1>
-                {this.renderListDev()}
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 ">
+                        
+                            <h1>List Matching</h1>
+                            {this.renderListDev()} 
+                         
+                    </div>
+                </div>
             </div>
         )
     }
