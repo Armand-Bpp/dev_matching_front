@@ -1,17 +1,17 @@
-import React from 'react';
-import Card from '../entreprise/Card'
+// import React from 'react';
+// import Card from '../entreprise/Card'
 
 
 
-class Favoris extends React.Component {
-    render(){
-        return(
-            <div>
-                salut
-            </div>
-        )
-    }
-}
+// class Favoris extends React.Component {
+//     render(){
+//         return(
+//             <div>
+//                 salut
+//             </div>
+//         )
+//     }
+// }
 
 
-export default Favoris;
+// export default Favoris;

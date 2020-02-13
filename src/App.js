@@ -1,7 +1,6 @@
 import React from 'react';
 import Home from './layouts/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Faq from './components/pages/Faq';
 import Jobs from './components/pages/Jobs';
 import Matching from './components/pages/Matching';
 import Favoris from './components/pages/Favoris';
@@ -23,9 +22,7 @@ function App() {
                   <Route path="/matching">
                     <Matching/>
                   </Route>
-                  <Route path="/faq">
-                    <Faq />
-                  </Route>
+                  
                   <Route path="/">
                     <Home />
                   </Route>
