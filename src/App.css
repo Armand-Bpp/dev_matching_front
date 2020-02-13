@@ -13,6 +13,35 @@
   }
 }
 
+body{
+  color : #535461;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.intro {
+  font-size: 60px;
+}
+
+
+.ligne {
+  background-color: #6C63FF;
+  height: 1px;
+  border: none;
+}
+
+.btn{
+  border-radius: 50px;
+  background: #6C63FF;
+  color : white;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
