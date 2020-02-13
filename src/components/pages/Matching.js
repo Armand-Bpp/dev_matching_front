@@ -15,14 +15,14 @@ class Matching extends React.Component{
       
     componentDidMount(){
 
-        const url = `http://localhost:3000/api/developers.json`;
+        const url = `http://localhost:3001/users/`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
             .then(json => {
                 console.log('json', json);
                 this.setState({
-                    listDev: json
+                    listDev: json.data
                 });
             });
  
@@ -46,6 +46,8 @@ class Matching extends React.Component{
              lastName = {listDev.lastName}
              city={listDev.city}
              skills= {listDev.skills}
+             experience= {listDev.experience}
+             bio= {listDev.bio}
             
             />
             )
