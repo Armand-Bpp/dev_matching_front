@@ -13,14 +13,14 @@ class ListJobs extends React.Component{
     }
 
     componentDidMount(){
-        const url =`http://localhost:3000/api/Jobs.json`;
+        const url =`http://localhost:3001/offers`;
         console.log('url',url);
         fetch(url)
-        .then(res => res.json())
-        .then(json =>{
+            .then(res => res.json())
+            .then(json =>{
             console.log('json',json);
             this.setState({
-                listEn: json
+                listEn: json.data
             });
             
         });
@@ -46,10 +46,10 @@ class ListJobs extends React.Component{
         return this.state.listEn.map((listEn) => {
             return(
             // <p key={listEn.id}> {listEn.compagnyName}   {listEn.title}  {listEn.city}   {listEn.contracts}  {listEn.date}  {listEn.skills}    </p>
-            <Card compagnyName={listEn.compagnyName}
+            <Card companyName={listEn.companyName}
                  title={listEn.title}
                  city={listEn.city}
-                 contratcs={listEn.contratcs}
+                 contract={listEn.contract}
                  date={listEn.date}
                  skills= {listEn.skills}
                      />
