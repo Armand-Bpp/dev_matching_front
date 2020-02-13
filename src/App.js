@@ -5,6 +5,7 @@ import Faq from './components/pages/Faq';
 import Jobs from './components/pages/Jobs';
 import Matching from './components/pages/Matching';
 import Favoris from './components/pages/Favoris';
+import ProfilDev from './components/pages/ProfilDev';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -22,6 +23,9 @@ function App() {
                   </Route>
                   <Route path="/matching">
                     <Matching/>
+                  </Route>
+                  <Route path="/profildev">
+                    <ProfilDev/>
                   </Route>
                   <Route path="/">
                     <Home />
