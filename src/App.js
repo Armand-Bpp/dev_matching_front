@@ -10,6 +10,7 @@ import ProfilDev from './components/pages/ProfilDev';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
+import ListDev from './components/pages/ListDev';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
                   </Route>
                   <Route path="/matching">
                     <Matching/>
+                  </Route>
+                  <Route path="/Listdev">
+                    <ListDev/>
                   </Route>
                   <Route path="/profildev">
                     <ProfilDev/>
