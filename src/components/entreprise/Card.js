@@ -45,7 +45,7 @@ class Card extends React.Component {
 
                         <div className="row">
                                 <div className=" col-4">
-                                    <div  className="avatar">
+                                    <div  className="profil">
                                         <img className="shadow  img-fluid" alt="" src="img/dev.png"/>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ class Card extends React.Component {
                                     
                                 <div>
                                     <h5 className="card-text">{this.props.compagnyName}</h5>
-                                    <h6 className="card-text"><i class="fas fa-map-marker-alt">Ville:</i>{this.props.city}</h6>
+                                    <h6 className="card-text"><i class="fas fa-map-marker-alt"></i>Ville:{this.props.city}</h6>
                                         <h6 className="card-text"><i class="fas fa-clipboard-list"></i>{this.props.contracts}</h6>
                                         <h6 className="card-text"><i class="far fa-calendar-alt"></i>{this.props.date}</h6>
                                 </div>
