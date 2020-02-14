@@ -1,10 +1,43 @@
 .list{
-    text-align: center;
+  
     
 }
 
 .car{
     margin-bottom: 20px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    /* box-shadow: 12px 12px 2px 1px rgba(134, 111, 182, 0.129); */
     border-radius: 25px;
+}
+h6{
+    text-align: left;
+    font-size: 12px;
+}
+h5{
+    text-align: left;
+}
+h4{
+    text-align: left;
+}
+
+.bouton{
+    text-align: right;
+
+}
+
+
+.skills{
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+
+.avatar img{
+    width: 150px;
+  height: 150px;
+  max-width: auto;
+  max-height: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+
 }

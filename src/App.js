@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './layouts/Home';
 import Login from "./components/core/Login"
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import ListJobs from './components/pages/ListJobs';
 import Matching from './components/pages/Matching';
 import Favorites from './components/pages/Favorites';

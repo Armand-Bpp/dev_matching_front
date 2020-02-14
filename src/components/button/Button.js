@@ -5,7 +5,7 @@ class Button extends React.Component{
     render(){
         return(
             <div>
-                <button className="btn btn-outline-primary"
+                <button className="btn btn-outline-dark"
                 onClick={this.props.onClickFn}
                 >
                     {this.props.children}
