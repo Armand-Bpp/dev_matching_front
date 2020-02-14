@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Faq from './components/pages/Faq';
 import Jobs from './components/pages/Jobs';
 import Matching from './components/pages/Matching';
-import Favoris from './components/pages/Favoris';
+import Favorites from './components/pages/Favorites';
 import ProfilDev from './components/pages/ProfilDev';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
@@ -15,8 +15,8 @@ function App() {
           <div className="Container-fluid">
             <Router>
                 <Switch>
-                  <Route path="/favoris">
-                    <Favoris />
+                  <Route path="/favorites">
+                    <Favorites />
                   </Route>
                   <Route path="/jobs">
                     <Jobs/>
