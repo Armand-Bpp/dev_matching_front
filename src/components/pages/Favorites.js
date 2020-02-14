@@ -1,32 +1,25 @@
 import React from 'react';
-import Card from '../favorites/Card';
-
-
+import Navbar from '../core/Navbar';
 class Favorites extends React.Component {
-    constructor(props) {
-        super(props);
-    
-        // this.state = {
-        //   listId: this.getFromLocalStorage(),
-        //   list: []
-        // };
-      }
-
-    //   getFromLocalStorage() {
-    //     const listStr = localStorage.getItem('my-list') || '[]';
-    //     return JSON.parse(listStr);
-    //   }
-
 
     render(){
         return(
-            <div>
-                <Card/>
+            <div className="container">
+                <div className="">
+                    <Navbar />
+                </div>
+                <div className="favtext">
+                  <h2 className="text-center mt-5">Vous n'avez pas de favoris</h2>  
+                </div>
                 
-            </div>
+                <div className="text-center">
+                    <img src="img/none.svg" className="img-fluid" />
+                </div>
+                <div className="backmatching text-center mt-2">
+                    <button type="button" class="btn btn-lg btn-outline-primary">Veuillez retourner au matching</button>
+                </div>
+            </div>    
         )
     }
 }
-
-
 export default Favorites;
