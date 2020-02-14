@@ -1,27 +1,55 @@
 [
-    {"id":"1",
-    "compagnyName":"konexio", 
-    "title":"React full stack",
-    "city":"Paris",
-    "contracts":"CDD",
-    "date":"12/12/2020",
-    "skills":["html ","css ","javascrip"]
+  {"id":"1",
+  "compagnyName":"konexio", 
+  "title":"React full stack",
+  "city":"Paris",
+  "contracts":"CDD",
+  "date":"12/12/2020",
+  "skills":["html ","css ","javascrip"]
 },
-    {"id":"1",
-    "compagnyName":"tictac", 
-    "title":"React front",
-    "city":"Paris",
-    "contracts":"CDI",
-    "date":"12/12/2020",
-    "skills":["react ","nodeJs ","javascrip"]
+  {"id":"1",
+  "compagnyName":"tictac", 
+  "title":"React front",
+  "city":"Paris",
+  "contracts":"CDI",
+  "date":"12/12/2020",
+  "skills":["react ","nodeJs ","javascrip"]
 },
-    {"id":"1",
-    "compagnyName":"station F", 
-    "title":"React back",
-    "city":"Paris",
-    "contracts":"Stage",
-    "date":"12/12/2020",
-    "skills":["html ","nodeJs ","javascrip"]
+  {"id":"1",
+  "compagnyName":"station F", 
+  "title":"React back",
+  "city":"Paris",
+  "contracts":"Stage",
+  "date":"12/12/2020",
+  "skills":["html ","nodeJs ","javascrip"]
+},
+  {"id":"1",
+  "compagnyName":"konexio", 
+  "title":"React full stack",
+  "city":"Paris",
+  "contracts":"CDD",
+  "date":"12/12/2020",
+  "skills":["html ","css ","javascrip"]
+},
+  {"id":"1",
+  "compagnyName":"tictac", 
+  "title":"React front",
+  "city":"Paris",
+  "contracts":"CDI",
+  "date":"12/12/2020",
+  "skills":["react ","nodeJs ","javascrip"]
+},
+  {"id":"1",
+  "compagnyName":"station F", 
+  "title":"React back",
+  "city":"Paris",
+  "contracts":"Stage",
+  "date":"12/12/2020",
+  "skills":["html ","nodeJs ","javascrip"]
 }
-   
+ 
 ]
+
+
+
+

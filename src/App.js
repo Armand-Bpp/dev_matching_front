@@ -1,14 +1,16 @@
 import React from 'react';
 import Home from './layouts/Home';
+import Login from "./components/core/Login"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Faq from './components/pages/Faq';
-import Jobs from './components/pages/Jobs';
+
+import ListJobs from './components/pages/ListJobs';
 import Matching from './components/pages/Matching';
 import Favorites from './components/pages/Favorites';
 import ProfilDev from './components/pages/ProfilDev';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
+import ListDev from './components/pages/ListDev';
 
 function App() {
   return (
@@ -16,16 +18,26 @@ function App() {
             <Router>
                 <Switch>
                   <Route path="/favorites">
+<<<<<<< HEAD
                     <Favorites />
+=======
+                    <Favorites/>
+>>>>>>> 9a3934f2b7ec50015bd0a592a849a20694cf726b
                   </Route>
-                  <Route path="/jobs">
-                    <Jobs/>
+                  <Route path="/listjobs">
+                    <ListJobs/>
                   </Route>
                   <Route path="/matching">
                     <Matching/>
                   </Route>
+                  <Route path="/Listdev">
+                    <ListDev/>
+                  </Route>
                   <Route path="/profildev">
                     <ProfilDev/>
+                  </Route>
+                  <Route path="/login">
+                    <Login/>
                   </Route>
                   <Route path="/">
                     <Home />

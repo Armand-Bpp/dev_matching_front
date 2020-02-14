@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '../button/Button';
+
 
 
 // import Button from '../button/Button';
@@ -13,19 +15,24 @@ class Card extends React.Component {
     
     render(){
         return(
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{this.props.lastName}</h5>
-                        <p class="card-text">{this.props.firstName}</p>
-                        <p class="card-text">{this.props.city}</p>
-                        <p class="card-text">{this.props.skills }</p>
-                        <a href="#" class="btn btn-primary">Ajouter aux favoris</a>
+            <div className="container">
+            <div className="row ">
+                <div className="col-sm-6 col-12">
+                    <div className="card">
+                    <div className="card-body list">
+                        <h5 className="card-title">{this.props.lastName}</h5>
+                        <p className="card-text">{this.props.firstName}</p>
+                        <p className="card-text">{this.props.city}</p>
+                        <p className="card-text">{this.props.skills }</p>
+                        <Button className="bouton" onClickFn={this.onsubmit}>
+                            ajouter aux favoris
+                      
+                        </Button>
                     </div>
                     </div>
                 </div>
             </div>
+        </div>
         )
         
         

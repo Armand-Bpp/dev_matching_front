@@ -18,7 +18,7 @@ class Favorites extends React.Component {
                 <div className="backmatching text-center mt-2">
                     <button type="button" class="btn btn-lg btn-outline-primary">Veuillez retourner au matching</button>
                 </div>
-            </div>
+            </div>    
         )
     }
 }
