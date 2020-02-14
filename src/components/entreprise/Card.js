@@ -45,7 +45,7 @@ class Card extends React.Component {
 
                         <div className="row">
                                 <div className=" col-4">
-                                    <div  className="avatar">
+                                    <div  className="profil">
                                         <img className="shadow  img-fluid" alt="" src="img/dev.png"/>
                                     </div>
                                 </div>
