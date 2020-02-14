@@ -18,11 +18,7 @@ function App() {
             <Router>
                 <Switch>
                   <Route path="/favorites">
-<<<<<<< HEAD
                     <Favorites />
-=======
-                    <Favorites/>
->>>>>>> 9a3934f2b7ec50015bd0a592a849a20694cf726b
                   </Route>
                   <Route path="/listjobs">
                     <ListJobs/>
