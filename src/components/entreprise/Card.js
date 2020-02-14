@@ -69,7 +69,6 @@ class Card extends React.Component {
                                 <div className="">
                                     {/* <p className="card-text skills">{this.props.skills}</p> */}
                                     <span class="badge badge-primary">{this.props.skills}</span>
-                                
                                 </div>
                              </div>
                              <div className="col-2">

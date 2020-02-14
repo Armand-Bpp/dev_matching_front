@@ -62,9 +62,10 @@ class ListJobs extends React.Component{
         return(
             <div>
                 <Navbar />
-                <h1 >list ListJobs</h1>
-                {this.renderListEn()}
-
+                <div className="jobs">
+                    <h2 className="text-center mb-4">List jobs</h2>
+                    {this.renderListEn()}
+                </div>
             </div>
         )
     }
