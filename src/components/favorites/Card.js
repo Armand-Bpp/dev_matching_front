@@ -20,7 +20,7 @@ class Card extends React.Component {
                 <div class="col-sm-6">
                     <div class="card">
                     <div class="card-body">
-                       salut
+                       salutdfgdg
                     </div>
                     </div>
                 </div>
