@@ -12,16 +12,7 @@ class Card extends React.Component {
         //     lastName:this.props.lastName
         // }
     }
-    renderSkills(){
-        return this.props.skills.map((skills) => {
-       return(
-           
-               <div >
-                   <span className="badge badge-primary">{skills}</span>
-               </div>
-               )
-           })
-       }
+  
     
     render(){
         return(
@@ -48,16 +39,13 @@ class Card extends React.Component {
                             
                                 
                             <div>
-                                <h5 className="card-text">{this.props.compagnyName}</h5>
+                                <h5 className="card-text">{this.props.companyName}</h5>
                                 <h6 className="card-text"><i class="fas fa-map-marker-alt"></i>Ville:{this.props.city}</h6>
-                                    <h6 className="card-text"><i class="fas fa-clipboard-list"></i>{this.props.contracts}</h6>
+                                    <h6 className="card-text"><i class="fas fa-clipboard-list"></i>{this.props.contract}</h6>
                                     <h6 className="card-text"><i class="far fa-calendar-alt"></i>{this.props.date}</h6>
                             </div>
                                 
-                            <div className="">
-                                {/* <p className="card-text skills">{this.props.skills}</p> */}
-                                <span >{this.renderSkills()}</span>
-                            </div>
+                        
                             </div>
                             <div className="col-2">
                             <div className="bouton" >
