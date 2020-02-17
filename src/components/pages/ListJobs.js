@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../entreprise/Card';
-import Button from '../button/Button';
+import Navbar from '../core/Navbar';
+// import Button from '../button/Button';
 
 class ListJobs extends React.Component{
     constructor(props){
@@ -16,8 +17,8 @@ class ListJobs extends React.Component{
         const url =`http://localhost:3001/offers`;
         console.log('url',url);
         fetch(url)
-            .then(res => res.json())
-            .then(json =>{
+        .then(res => res.json())
+        .then(json =>{
             console.log('json',json);
             this.setState({
                 listEn: json.data
@@ -46,10 +47,10 @@ class ListJobs extends React.Component{
         return this.state.listEn.map((listEn) => {
             return(
             // <p key={listEn.id}> {listEn.compagnyName}   {listEn.title}  {listEn.city}   {listEn.contracts}  {listEn.date}  {listEn.skills}    </p>
-            <Card companyName={listEn.companyName}
+            <Card compagnyName={listEn.compagnyName}
                  title={listEn.title}
                  city={listEn.city}
-                 contract={listEn.contract}
+                 contracts={listEn.contracts}
                  date={listEn.date}
                  skills= {listEn.skills}
                      />
@@ -60,9 +61,11 @@ class ListJobs extends React.Component{
     render(){
         return(
             <div>
-                <h1>list ListJobs</h1>
-                {this.renderListEn()}
-
+                <Navbar />
+                <div className="jobs">
+                    <h2 className="text-center mb-4">List jobs</h2>
+                    {this.renderListEn()}
+                </div>
             </div>
         )
     }
