@@ -7,6 +7,7 @@ import ListJobs from './components/pages/ListJobs';
 import Matching from './components/pages/Matching';
 import Favorites from './components/pages/Favorites';
 import ProfilDev from './components/pages/ProfilDev';
+import AddJobs from './components/pages/AddJobs';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import './App.css';
@@ -22,6 +23,9 @@ function App() {
                   </Route>
                   <Route path="/listjobs">
                     <ListJobs/>
+                  </Route>
+                  <Route path="/addjobs">
+                    <AddJobs/>
                   </Route>
                   <Route path="/matching">
                     <Matching/>
