@@ -11,7 +11,7 @@ class Card extends React.Component {
         this.state = {
        
     }
-    
+    this.renderSkills = this.renderSkills.bind(this);
     }
     
 
@@ -23,16 +23,16 @@ class Card extends React.Component {
 
     // }
 
-    //  renderSkills(){
-    //      return this.state.skills.map((skills) => {
-    //     return(
+     renderSkills(){
+         return this.props.skills.map((skills) => {
+        return(
             
-    //             <div >
-    //                 <p>{skills}</p>
-    //             </div>
-    //             )
-    //         })
-    //     }
+                <div >
+                    <span className="badge badge-primary">{skills}</span>
+                </div>
+                )
+            })
+        }
                      
 
     render(){
@@ -68,7 +68,7 @@ class Card extends React.Component {
                                     
                                 <div className="">
                                     {/* <p className="card-text skills">{this.props.skills}</p> */}
-                                    <span class="badge badge-primary">{this.props.skills}</span>
+                                    <span >{this.renderSkills()}</span>
                                 </div>
                              </div>
                              <div className="col-2">
@@ -77,7 +77,7 @@ class Card extends React.Component {
                                     <i class="far fa-bookmark"></i>
                                     </Button>
                                 </div>
-                             </div>
+                             </div>  
                         </div>
                     
 
