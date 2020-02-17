@@ -16,14 +16,14 @@ class ListDev extends React.Component{
       
     componentDidMount(){
 
-        const url = `http://localhost:3001/users/`;
+        const url = `http://localhost:3000/api/developers.json`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
             .then(json => {
                 console.log('json', json);
                 this.setState({
-                    listDev: json.data
+                    listDev: json
                 });
             });
  
@@ -47,8 +47,8 @@ class ListDev extends React.Component{
              lastName = {listDev.lastName}
              city={listDev.city}
              skills= {listDev.skills}
-             experience= {listDev.experience}
-             bio= {listDev.bio}
+             title={listDev.title}
+            
             
             />
             )
@@ -60,7 +60,7 @@ class ListDev extends React.Component{
                 <div className="row">
                     <div className="col-12 ">
                         
-                            <h1>List Matching</h1>
+                            <h1>List dev</h1>
                             {this.renderListDev()} 
                          
                     </div>
