@@ -16,20 +16,23 @@ class Favorites extends React.Component {
       }
     
       async componentDidMount(){
+        //   console.log('json33', json);
+          
         const {
             role,
             _id
-        } = await Api.getUser(); 
+        } = Api.getUser(); 
 
 
         const url = `http://localhost:3001/favorites/users/${_id}?typeId=offer`;
-        console.log(role);
+        console.log(role, "role");
+        console.log('id', _id)
         if(role  ===  "developer"){
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
             .then(json => {
-                console.log('json', json,this);
+                console.log('json1', json,this);
                 this.setState({
                     list: json.data
                 });
@@ -40,7 +43,8 @@ class Favorites extends React.Component {
             fetch(url)
             .then(res => res.json())
             .then(json =>{
-                console.log('json',json, this);
+                console.log('json2',json, this);
+                // console.log(json.data.typeId,'typid')
                 this.setState({
                     list: json.data
                 });
