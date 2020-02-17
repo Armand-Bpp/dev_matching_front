@@ -8,9 +8,22 @@ import Button from '../button/Button';
 class Card extends React.Component {
     constructor(props){
         super(props)
-        // this.state = {
-        //     lastName:this.props.lastName
-        // }
+        this.state = {
+        
+        }
+        this.renderSkills = this.renderSkills.bind(this);
+    }
+
+    renderSkills(){
+        return this.props.skills.map((skills) => {
+            return(
+                <div className="d-inline">
+                    <ul className="d-inline list-unstyled">
+                        <li className="d-inline"><span class="badge badge-secondary mx-1">{skills}</span></li>
+                    </ul>
+                </div>
+            )
+        })
     }
 
 
@@ -28,20 +41,26 @@ class Card extends React.Component {
     
     render(){
         return(
-
-
-            <div className="container-fluid">
-            <div className="row">
-                <div className="offset-3 col-6 ">
-                    <div className="card shadow car">
-                    <div className="card-body list">
-
-                        <div className="row">
-                                <div className=" col-4">
-                                    <div  className="profil">
-                                        <img className="shadow  img-fluid" alt="" src="img/dev.png"/>
+            <div>
+                <div className="container">
+                    <div className="row">
+                        <div class="card col-lg-8 ml-auto mr-auto mb-5 shadow">
+                            <div class="card-body">
+                                <div className="row">
+                                    <div  className="profil col-12 col-md-4 col-lg-4">
+                                        <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
+                                    </div>
+                                    <div  className="col-lg-6 col-12 col-md-6">
+                                        <h3 className="card-text">{this.props.firstName} {this.props.lastName}</h3>
+                                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</h5>
+                                        <h4 className="card-title">{this.props.title}</h4>
+                                        {this.renderSkills()}
+                                    </div>
+                                    <div className="bouton col-12 col-lg-2 col-md-2" >
+                                        <Button onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <div className="col-6">
                                     
                                
@@ -71,34 +90,13 @@ class Card extends React.Component {
                                     </Button>
                                 </div>
                              </div>
+=======
+                            </div>
+>>>>>>> 7d6363bcb95d4587e2ab9da5109196aa6d76ad39
                         </div>
-                    
-
-
-                      
-                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-        //     <div className="container">
-        //     <div className="row ">
-        //         <div className="col-sm-6 col-12">
-        //             <div className="card">
-        //             <div className="card-body list">
-        //                 <h5 className="card-title">{this.props.lastName}</h5>
-        //                 <p className="card-text">{this.props.firstName}</p>
-        //                 <p className="card-text">{this.props.city}</p>
-        //                 <p className="card-text">{this.props.skills }</p>
-        //                 <Button className="bouton" onClickFn={this.onsubmit}>
-        //                     ajouter aux favoris
-                      
-        //                 </Button>
-        //             </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
         )
         
         
