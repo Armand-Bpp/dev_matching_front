@@ -41,7 +41,7 @@ class Card extends React.Component {
                                 
                             
                             <div>
-                                <h4 className="card-title">{this.props.userId}  </h4>
+                                <h4 className="card-title">{this.props.lastName} {this.props.firstName} </h4>
                                 
                         
                             </div>

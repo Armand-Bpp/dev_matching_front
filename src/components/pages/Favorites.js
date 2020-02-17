@@ -19,8 +19,8 @@ class Favorites extends React.Component {
         const {
             role
         } = Api.getUser(); 
-        const url = `http://localhost:3001/favorites`;
         if(role  ===  "developer"){
+          const url = `http://localhost:3001/favorites`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
@@ -50,16 +50,16 @@ class Favorites extends React.Component {
  
 
     renderFavorites(){
-        return this.state.list.map((list) => {
+        return this.state.list.map((listDev) => {
             return(
             // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
             <Card 
             
-            userId = {list.userId}
-                // lastName = {listDev.lastName}
-                // city={listDev.city}
-                // skills= {listDev.skills}
-                // title={listDev.title}
+                firstName = {listDev.firstName}
+                lastName = {listDev.lastName}
+                city={listDev.city}
+                skills= {listDev.skills}
+                title={listDev.title}
         
             
             />
@@ -73,7 +73,6 @@ class Favorites extends React.Component {
             <div className="container">
             <div className="row">
                 <div className="col-12 ">
-                    
                     
                         <h1>favoris</h1>
                         {this.renderFavorites()} 
