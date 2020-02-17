@@ -1,3 +1,7 @@
+body{
+ background: rgb(247, 247, 247);
+}
+
 .App {
   text-align: center;
 }
@@ -13,10 +17,48 @@
   }
 }
 
+.bio{
+  background: white;
+}
+
+.profildev{
+  margin-top: 100px; 
+}
+
+.addprofilfav {
+  background-color: white;
+  color: #282c34;
+  border: none; 
+}
+
+.addprofilfav:hover {
+  background-color: #6C63FF;
+  color: white;
+}
+
+.contactprofilfav {
+  background-color: white;
+  color: #282c34;
+  border: none; 
+}
+
+.contactprofilfav:hover {
+  background-color: #6C63FF;
+  color: white;
+}
+
 .fa-user-circle{
   font-size: 30px;
   border: solid #6C63FF;
   border-radius: 50%;
+}
+
+a .fa-user-circle{
+  color: #282c34;
+}
+
+a .fa-user-circle:hover{
+  color:  #6C63FF;
 }
 
 

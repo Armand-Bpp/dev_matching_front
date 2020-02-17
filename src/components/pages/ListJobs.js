@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../entreprise/Card';
-import Navbar from '../core/Navbar';
+import Navbarlogin from '../core/Navbar';
 // import Button from '../button/Button';
 
 class ListJobs extends React.Component{
@@ -61,7 +61,7 @@ class ListJobs extends React.Component{
     render(){
         return(
             <div>
-                <Navbar />
+                <Navbarlogin  />
                 <div className="jobs">
                     <h2 className="text-center mb-4">List jobs</h2>
                     {this.renderListEn()}

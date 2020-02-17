@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../core/Navbar';
+import Navbarlogin  from '../core/Navbar';
 import Add from '../pages/Add.css';
 
 
@@ -9,7 +9,7 @@ class AddJobs extends React.Component {
         return(
             <div className="container">
                 <div className="">
-                    <Navbar />
+                    <Navbarlogin  />
                 </div>
                 <div className="add col-12 col-md-8 col-lg-8 mr-auto ml-auto">
                     <form>
