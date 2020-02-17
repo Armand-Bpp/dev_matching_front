@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../dev/Card';
+import Navbarlogin  from '../core/Navbar';
 
 // import Button from '../button/Button'
 class ListDev extends React.Component{
@@ -57,13 +58,12 @@ class ListDev extends React.Component{
     render(){
         return(
             <div className="container">
-                <div className="row">
-                    <div className="col-12 ">
-                        
-                            <h1>List dev</h1>
-                            {this.renderListDev()} 
-                         
-                    </div>
+                <div className="">
+                    <Navbarlogin  />
+                </div>
+                <div className="listdeveloppeurs">
+                        <h2 className="text-center mb-4">Liste développeurs</h2>
+                        {this.renderListDev()}
                 </div>
             </div>
         )
