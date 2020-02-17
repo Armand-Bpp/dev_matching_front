@@ -17,7 +17,7 @@ class Api{
     getFavoritesUser(){
         const user = this.getUser();
         console.log('user', user._id);
-        const url = `http://localhost:3001/favorites/users/${user._id}`
+        const url = `http://192.168.1.219:3001/favorites/users/${user._id}`
         console.log(url)
         return fetch(url)
             .then(res=>res.json())

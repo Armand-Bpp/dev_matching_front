@@ -12,7 +12,7 @@ class CardProfil extends React.Component {
                             </div>
                         </div>
                         <div className="avatar">
-                            <img className="shadow-lg" alt="" src={this.props.image} />
+                            <img className="shadow-lg" alt="" src={this.props.picture} />
                             <div className=" addfav">
                                 <button type="button" className="addfavoris btn-sm btn shadow bg-white"><i class="far fa-bell"></i></button>
                             </div>
@@ -34,7 +34,7 @@ class CardProfil extends React.Component {
                         <div className="bio shadow px-4 rounded">
                             <h3 className="pt-2">Biographie</h3>
                             <p className="pt-1 pb-4">
-                                {this.props.biographie}
+                                {this.props.bio}
                             </p>
                         </div>
                         <div className="competence mt-5">

@@ -14,14 +14,14 @@ class ProfilDev extends React.Component {
     }
 
     componentDidMount(){
-      const url = `http://localhost:3000/api/developers.json`;
+      const url = `http://192.168.1.219:3001/users`;
       console.log('url', url);
       fetch(url)
       .then(res => res.json())
       .then(json =>{
           console.log("json", json);
           this.setState({
-            profilId : json[0]
+            profilId : json.data[0]
           })
       });
     }
@@ -32,6 +32,10 @@ class ProfilDev extends React.Component {
             <CardProfil 
             firstName = {this.state.profilId.firstName}
             lastName = {this.state.profilId.lastName}
+            bio = {this.state.profilId.bio}
+            picture = {this.state.profilId.picture}
+            lastName = {this.state.profilId.lastName}
+            
             /> 
         )
     }
