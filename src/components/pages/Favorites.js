@@ -17,8 +17,13 @@ class Favorites extends React.Component {
     
       async componentDidMount(){
         const {
-            role
-        } = Api.getUser(); 
+            role,
+            _id
+        } = await Api.getUser(); 
+
+
+        const url = `http://localhost:3001/favorites/users/${_id}?typeId=offer`;
+        console.log(role);
         if(role  ===  "developer"){
           const url = `http://localhost:3001/favorites`;
         console.log('url', url);
@@ -79,10 +84,6 @@ class Favorites extends React.Component {
             <div className="container">
             <div className="row">
                 <div className="col-12 ">
-<<<<<<< HEAD
-=======
-
->>>>>>> 7ec713172fa0d10ab3ebc4576ccde662548a0bac
                     
                         <h1>favoris</h1>
                         {this.renderFavorites()} 
