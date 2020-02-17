@@ -17,18 +17,8 @@ class Favorites extends React.Component {
     
       async componentDidMount(){
         const {
-<<<<<<< HEAD
             role
         } = Api.getUser(); 
-=======
-            role,
-            _id
-        } = await Api.getUser(); 
-
-
-        const url = `http://localhost:3001/favorites/users/${_id}?typeId=offer`;
-        console.log(role);
->>>>>>> 7ec713172fa0d10ab3ebc4576ccde662548a0bac
         if(role  ===  "developer"){
           const url = `http://localhost:3001/favorites`;
         console.log('url', url);
