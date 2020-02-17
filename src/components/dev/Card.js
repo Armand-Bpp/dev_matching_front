@@ -12,6 +12,19 @@ class Card extends React.Component {
         //     lastName:this.props.lastName
         // }
     }
+
+
+
+    renderSkills(){
+        return this.props.skills.map((skills) => {
+       return(
+           
+               <div >
+                   <span className="badge badge-primary">{skills}</span>
+               </div>
+               )
+           })
+       }
     
     render(){
         return(
@@ -48,7 +61,7 @@ class Card extends React.Component {
                                     
                                 <div className="">
                                     {/* <p className="card-text skills">{this.props.skills}</p> */}
-                                    <span class="badge badge-primary">{this.props.skills}</span>
+                                    <span>{this.renderSkills()}</span>
                                 </div>
                              </div>
                              <div className="col-2">
