@@ -13,6 +13,12 @@
   }
 }
 
+.fa-user-circle{
+  font-size: 30px;
+  border: solid #6C63FF;
+  border-radius: 50%;
+}
+
 
 /** CARD **/
 .CustomCard {

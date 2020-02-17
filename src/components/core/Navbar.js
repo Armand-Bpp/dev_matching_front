@@ -14,18 +14,26 @@ class Navbar extends React.Component {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Accueil <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="#"><i class="fas fa-th-large"></i> Accueil <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="favorites">Favoris</a>
+                            <a className="nav-link" href="favorites"><i class="far fa-bookmark"></i> Favoris</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="listjobs">Jobs</a>
+                            <a className="nav-link" href="listjobs"><i class="fas fa-briefcase"></i> Jobs</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="matching">Matching</a>
+                            <a className="nav-link" href="matching"><i class="fas fa-network-wired"></i> Matching</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="addjobs">Ajouter un job</a>
                         </li>
                         </ul>
+                        <div className="ml-auto">
+                            <i class="fas fa-envelope mr-4"></i>
+                            <i class="fas fa-bell mr-4"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </div>
                     </div>
                 </nav>
             </div>
