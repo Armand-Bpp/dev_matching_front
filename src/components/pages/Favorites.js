@@ -15,28 +15,38 @@ class Favorites extends React.Component {
         this.renderFavorites=this.renderFavorites.bind(this);
       }
     
-      componentDidMount(){
+      async componentDidMount(){
         const {
+<<<<<<< HEAD
             role
         } = Api.getUser(); 
+=======
+            role,
+            _id
+        } = await Api.getUser(); 
+
+
+        const url = `http://localhost:3001/favorites/users/${_id}?typeId=offer`;
+        console.log(role);
+>>>>>>> 7ec713172fa0d10ab3ebc4576ccde662548a0bac
         if(role  ===  "developer"){
           const url = `http://localhost:3001/favorites`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
             .then(json => {
-                console.log('json', json);
+                console.log('json', json,this);
                 this.setState({
                     list: json.data
                 });
             });   
         } if (role  ===   "company") {
-            const url =`http://localhost:3001/favorites`;
+            const url =`http://localhost:3001/favorites/users/${_id}?typeId=user`;
             console.log('url',url);
             fetch(url)
             .then(res => res.json())
             .then(json =>{
-                console.log('json',json);
+                console.log('json',json, this);
                 this.setState({
                     list: json.data
                 });
@@ -50,11 +60,17 @@ class Favorites extends React.Component {
  
 
     renderFavorites(){
+
+        console.log('this.state',this.state);
+        
+
         return this.state.list.map((listDev) => {
+            console.log('listdev',listDev);
+            
             return(
             // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
             <Card 
-            
+                userId = {listDev.userId}
                 firstName = {listDev.firstName}
                 lastName = {listDev.lastName}
                 city={listDev.city}
@@ -73,6 +89,10 @@ class Favorites extends React.Component {
             <div className="container">
             <div className="row">
                 <div className="col-12 ">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7ec713172fa0d10ab3ebc4576ccde662548a0bac
                     
                         <h1>favoris</h1>
                         {this.renderFavorites()} 

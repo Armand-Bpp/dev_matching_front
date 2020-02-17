@@ -13,13 +13,13 @@
 class Api{
 
     getUser(){
-        const url = `http://localhost:3001/users`
+        const url = `http://localhost:3001/users/5e46636ad7309f1e4c550f21`
         console.log(url)
         return fetch(url)
             .then(res=>res.json())
             .then(json=>{
                 console.log('json', json)
-                return json
+                return json.data
 
             })
 
