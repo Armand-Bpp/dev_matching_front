@@ -28,7 +28,9 @@ class Card extends React.Component {
         return(
             
                 <div >
-                    <span className="badge badge-primary">{skills}</span>
+                     <ul className="list-inline">
+                     <li><span className="badge badge-primary list-inline-item">{skills}</span></li>
+                    </ul>
                 </div>
                 )
             })
@@ -67,8 +69,7 @@ class Card extends React.Component {
                                 </div>
                                     
                                 <div className="">
-                                    {/* <p className="card-text skills">{this.props.skills}</p> */}
-                                    <span >{this.renderSkills()}</span>
+                                       <span >{this.renderSkills()}</span>
                                 </div>
                              </div>
                              <div className="col-2">

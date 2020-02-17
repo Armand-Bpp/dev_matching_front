@@ -50,16 +50,16 @@ class Favorites extends React.Component {
  
 
     renderFavorites(){
-        return this.state.list.map((listDev) => {
+        return this.state.list.map((list) => {
             return(
             // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
             <Card 
             
-                firstName = {listDev.firstName}
-                lastName = {listDev.lastName}
-                city={listDev.city}
-                skills= {listDev.skills}
-                title={listDev.title}
+            userId = {list.userId}
+                // lastName = {listDev.lastName}
+                // city={listDev.city}
+                // skills= {listDev.skills}
+                // title={listDev.title}
         
             
             />

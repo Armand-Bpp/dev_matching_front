@@ -41,7 +41,7 @@ class Card extends React.Component {
                                 
                             
                             <div>
-                                <h4 className="card-title">{this.props.lastName} {this.props.firstName} </h4>
+                                <h4 className="card-title">{this.props.userId}  </h4>
                                 
                         
                             </div>
@@ -62,7 +62,7 @@ class Card extends React.Component {
                             <div className="col-2">
                             <div className="bouton" >
                                 <Button onClickFn={this.onsubmit}>
-                                <i class="far fa-bookmark"></i>
+                                <i class="far fa-trash-alt"></i>
                                 </Button>
                             </div>
                             </div>  
