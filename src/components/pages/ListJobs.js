@@ -14,14 +14,14 @@ class ListJobs extends React.Component{
     }
 
     componentDidMount(){
-        const url =`http://localhost:3000/api/Jobs.json`;
+        const url =`http://localhost:3001/offers`;
         console.log('url',url);
         fetch(url)
         .then(res => res.json())
         .then(json =>{
             console.log('json',json);
             this.setState({
-                listEn: json
+                listEn: json.data
             });
             
         });

@@ -19,8 +19,8 @@ class Favorites extends React.Component {
         const {
             role
         } = Api.getUser(); 
+        const url = `http://localhost:3001/favorites`;
         if(role  ===  "developer"){
-          const url = `http://localhost:3001/favorites`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
@@ -73,6 +73,7 @@ class Favorites extends React.Component {
             <div className="container">
             <div className="row">
                 <div className="col-12 ">
+                    
                     
                         <h1>favoris</h1>
                         {this.renderFavorites()} 
