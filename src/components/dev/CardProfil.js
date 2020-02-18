@@ -42,7 +42,7 @@ class CardProfil extends React.Component {
                             <hr/>
                             <ul className="list-unstyled list-inline">
                                 <li className="list-inline-item">
-                                    <h3><span class="badge badge-secondary">{this.props.skills}</span></h3>   
+                                    {/* <h3><span class="badge badge-secondary">{this.props.skills}</span></h3>    */}
                                 </li>
                             </ul>
                         </div>
