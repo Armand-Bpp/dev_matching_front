@@ -17,14 +17,14 @@ class Card extends React.Component {
         return(
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="card">
-                    <div class="card-body">
+                    <div className="card">
+                    <div className="card-body">
                     <h5 className="card-title">{this.props.companyName}</h5>
                      <h6 className="card-text">{this.props.title}</h6>
                      <h6 className="card-text">{this.props.city}</h6>
                      <h6 className="card-text">{this.props.contract}</h6>
                     <h6 className="card-text">{this.props.date}</h6>
-                    <span class="badge badge-primary">{this.props.skills}</span>
+                    <span className="badge badge-primary">{this.props.skills}</span>
                     <Button onClickFn={this.onsubmit}>
                      Retirer des  favoris
                      </Button>

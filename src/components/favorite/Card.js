@@ -40,9 +40,9 @@ class Card extends React.Component {
                                 
                             <div>
                                 <h5 className="card-text">{this.props.companyName}</h5>
-                                <h6 className="card-text"><i class="fas fa-map-marker-alt"></i>Ville:{this.props.city}</h6>
-                                    <h6 className="card-text"><i class="fas fa-clipboard-list"></i>{this.props.contract}</h6>
-                                    <h6 className="card-text"><i class="far fa-calendar-alt"></i>{this.props.date}</h6>
+                                <h6 className="card-text"><i className="fas fa-map-marker-alt"></i>Ville:{this.props.city}</h6>
+                                    <h6 className="card-text"><i className="fas fa-clipboard-list"></i>{this.props.contract}</h6>
+                                    <h6 className="card-text"><i className="far fa-calendar-alt"></i>{this.props.date}</h6>
                             </div>
                                 
                         
@@ -50,7 +50,7 @@ class Card extends React.Component {
                             <div className="col-2">
                             <div className="bouton" >
                                 <Button onClickFn={this.onsubmit}>
-                                <i class="far fa-trash-alt"></i>
+                                <i className="far fa-bookmark"></i>
                                 </Button>
                             </div>
                             </div>  

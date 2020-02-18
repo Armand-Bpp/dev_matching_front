@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from '../core/Skills';
 
 class CardProfil extends React.Component {
     render(){
@@ -12,13 +13,13 @@ class CardProfil extends React.Component {
                             </div>
                         </div>
                         <div className="avatar">
-                            <img className="shadow-lg" alt="" src={this.props.image} />
+                            <img className="shadow-lg" alt="" src={this.props.picture} />
                             <div className=" addfav">
                                 <button type="button" className="addfavoris btn-sm btn shadow bg-white"><i class="far fa-bell"></i></button>
                             </div>
                         </div>
                         <div className="infos">
-                            <p className="font-weight-bold">{this.props.lastName} {this.props.firstName}</p>
+                            <p className="font-weight-bold">{this.props.firstName} {this.props.lastName}</p>
                             <p className=" ville"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</p>
                         </div>
                         <div className="float-right contfav d-none d-lg-block d-md-block">
@@ -34,7 +35,7 @@ class CardProfil extends React.Component {
                         <div className="bio shadow px-4 rounded">
                             <h3 className="pt-2">Biographie</h3>
                             <p className="pt-1 pb-4">
-                                {this.props.biographie}
+                                {this.props.bio}
                             </p>
                         </div>
                         <div className="competence mt-5">
@@ -42,7 +43,7 @@ class CardProfil extends React.Component {
                             <hr/>
                             <ul className="list-unstyled list-inline">
                                 <li className="list-inline-item">
-                                    <h3><span class="badge badge-secondary">{this.props.skills}</span></h3>   
+                                    <Skills skills={this.props.skills} />
                                 </li>
                             </ul>
                         </div>

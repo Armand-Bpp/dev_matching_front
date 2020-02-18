@@ -49,6 +49,12 @@ class Formaddjob extends React.Component {
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Soumettre l'offre</button>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" />
+                        </div>
+                    </form>
                 </form>
             </div>
         )
