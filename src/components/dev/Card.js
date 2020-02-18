@@ -41,7 +41,7 @@ class Card extends React.Component {
                                         <h3 className="card-text">{this.props.firstName} {this.props.lastName}</h3>
                                         <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</h5>
                                         <h4 className="card-title">{this.props.title}</h4>
-                                        {this.renderSkills()}
+                                        {/* {this.renderSkills()} */}
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>

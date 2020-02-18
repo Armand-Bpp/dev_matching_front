@@ -85,14 +85,11 @@ class Favorites extends React.Component {
     render(){
         return(
             
-            <div className="container">
-            <div className="row">
-                <div className="col-12 ">
-                    
-                        <h1>favoris</h1>
-                        {this.renderFavorites()} 
-                     
-                </div>
+        <div className="container">
+            <Navbar />
+            <div className="favtop">
+                <h1  className="text-center">favoris</h1>
+                    {this.renderFavorites()} 
             </div>
         </div>
             // <div className="container">

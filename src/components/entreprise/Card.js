@@ -56,6 +56,7 @@ class Card extends React.Component {
                                             <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
                                         </ul>
                                         {/* {this.renderSkills()} */}
+                                        
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
