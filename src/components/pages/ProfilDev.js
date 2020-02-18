@@ -35,6 +35,8 @@ class ProfilDev extends React.Component {
             bio = {this.state.profilId.bio}
             picture = {this.state.profilId.picture}
             lastName = {this.state.profilId.lastName}
+            city = {this.state.profilId.city}
+            title = {this.state.profilId.title}
             
             /> 
         )
