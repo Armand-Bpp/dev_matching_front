@@ -9,28 +9,33 @@ class Skills extends React.Component {
         this.renderSkills = this.renderSkills.bind(this);
     }
 
-    componentDidMount(){
-        const url = `http://192.168.1.219:3001/skills`;
-        fetch(url)
-        .then( res => res.json())
-        .then(json => {
-            console.log("json", json);
-            this.setState({
-                skills : json
-            }) 
-        });
+    componentDidUpdate(prevProps) {
+        if (prevProps.skills !== this.props.skills){
+           this.setState({
+            skills : this.props.skills
+        }) 
+        }
+        
     }
 
     renderSkills(){
         return (
-            <div></div>
+            <div className="d-inline">
+                <ul className="d-inline list-unstyled">
+                    {this.state.skills.map(item => (
+                        <li className="d-inline ml-2" key={item.name}>
+                            {item.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         )
     }
 
     render(){
         return(
             <div>
-                {this.renderSkills}
+                {this.renderSkills()}
             </div>
         )
     }

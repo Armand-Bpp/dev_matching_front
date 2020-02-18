@@ -11,20 +11,20 @@ class Card extends React.Component {
         this.state = {
         
         }
-        this.renderSkills = this.renderSkills.bind(this);
+        // this.renderSkills = this.renderSkills.bind(this);
     }
 
-    renderSkills(){
-        return this.props.skills.map((skills) => {
-            return(
-                <div className="d-inline">
-                    <ul className="d-inline list-unstyled">
-                        <li className="d-inline"><span class="badge badge-secondary mx-1">{skills}</span></li>
-                    </ul>
-                </div>
-            )
-        })
-    }
+    // renderSkills(){
+    //     return this.props.skills.map((skills) => {
+    //         return(
+    //             <div className="d-inline">
+    //                 <ul className="d-inline list-unstyled">
+    //                     <li className="d-inline"><span class="badge badge-secondary mx-1">{skills}</span></li>
+    //                 </ul>
+    //             </div>
+    //         )
+    //     })
+    // }
     
     render(){
         return(
