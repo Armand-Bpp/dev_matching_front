@@ -24,20 +24,11 @@ class Card extends React.Component {
     // }
 
      renderSkills(){
-<<<<<<< HEAD
-         return this.props.skills.map((skills) => {
-        return(
-            
-                <div >
-                     <ul className="list-inline">
-                     <li><span className="badge badge-primary list-inline-item">{skills}</span></li>
-=======
         return this.props.skills.map((skills) => {
             return(
                 <div className="d-inline">
                     <ul className="d-inline list-unstyled">
                         <li className="d-inline"><span class="badge badge-secondary mx-1">{skills}</span></li>
->>>>>>> 7d6363bcb95d4587e2ab9da5109196aa6d76ad39
                     </ul>
                 </div>
             )
@@ -70,38 +61,7 @@ class Card extends React.Component {
                                         <Button onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
                                     </div>
                                 </div>
-<<<<<<< HEAD
-                                <div className="col-6">
-                                    
-                               
-                                <div>
-                                    <h4 className="card-title">{this.props.title}</h4>
-                                   
-                         
-                                </div>
-                                
-                                    
-                                <div>
-                                    <h5 className="card-text">{this.props.compagnyName}</h5>
-                                    <h6 className="card-text"><i class="fas fa-map-marker-alt"></i>Ville:{this.props.city}</h6>
-                                        <h6 className="card-text"><i class="fas fa-clipboard-list"></i>{this.props.contracts}</h6>
-                                        <h6 className="card-text"><i class="far fa-calendar-alt"></i>{this.props.date}</h6>
-                                </div>
-                                    
-                                <div className="">
-                                       <span >{this.renderSkills()}</span>
-                                </div>
-                             </div>
-                             <div className="col-2">
-                             <div className="bouton" >
-                                    <Button onClickFn={this.onsubmit}>
-                                    <i class="far fa-bookmark"></i>
-                                    </Button>
-                                </div>
-                             </div>  
-=======
                             </div>
->>>>>>> 7d6363bcb95d4587e2ab9da5109196aa6d76ad39
                         </div>
                     </div>
                 </div>
