@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../button/Button';
 import "../../components/pages/ListJobs.css"
+import { BrowserRouter as Router, Route, Link, Switch,withRouter } from 'react-router-dom';
+import ProfilDev from '../pages/ProfilDev';
 
 
 // import Button from '../button/Button';
@@ -9,8 +11,10 @@ class Card extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-       
+            selected: false
+            
     }
+    this.onsubmit = this.onsubmit.bind(this)
     // this.renderSkills = this.renderSkills.bind(this);
     }
     
@@ -34,6 +38,27 @@ class Card extends React.Component {
     //         )
     //     })
     // }
+
+    onsubmit(e){
+        console.log(this.props._id)
+        const id = this.props._id;
+    
+        const {props} =this;
+        console.log('id du users',props.userId)
+        // fetch('http://localhost:3000/api/jobs.json/${id}', {
+        // fetch(`http://192.168.1.219:3001/favorites/users/?typeId=offer&offerId=${id}`, {
+        fetch(`http://192.168.1.219:3001/favorites/users/${props.userId}?typeId=offer&offerId=${id}`, {
+        method:'POST'})
+        .then(function(response) {
+
+            console.log('response',response);
+            props.history.push("/favorites"); 
+        // return response.json();
+        })
+        this.setState({selected: true}) 
+
+  
+    }
                      
 
     render(){
@@ -56,10 +81,9 @@ class Card extends React.Component {
                                             <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
                                         </ul>
                                         {/* {this.renderSkills()} */}
-                                        
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
-                                        <Button onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
+                                        <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
                                     </div>
                                 </div>
                             </div>
@@ -71,4 +95,4 @@ class Card extends React.Component {
     }
 }
 
-export default Card;
+export default withRouter(Card);

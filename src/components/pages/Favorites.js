@@ -11,7 +11,6 @@ class Favorites extends React.Component {
         this.state={
             list:[]
         }
-        // this.onWrongActionDev=this.onWrongActionDev.bind(this);
         this.renderFavorites=this.renderFavorites.bind(this);
       }
     
@@ -24,11 +23,10 @@ class Favorites extends React.Component {
         } = Api.getUser(); 
 
 
-        const url = `http://localhost:3001/favorites/users/${_id}?typeId=offer`;
         console.log(role, "role");
         console.log('id', _id)
         if(role  ===  "developer"){
-          const url = `http://localhost:3001/favorites`;
+          const url = `http://192.168.1.219:3001/favorites/users/${_id}?typeId=offer`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())
@@ -39,7 +37,7 @@ class Favorites extends React.Component {
                 });
             });   
         } if (role  ===   "company") {
-            const url =`http://localhost:3001/favorites/users/${_id}?typeId=user`;
+            const url =`http://192.168.1.219:3001/favorites/users/${_id}?typeId=user`;
             console.log('url',url);
             fetch(url)
             .then(res => res.json())
@@ -63,24 +61,26 @@ class Favorites extends React.Component {
         console.log('this.state',this.state);
         
 
-        return this.state.list.map((listDev) => {
-            console.log('listdev',listDev);
+        return this.state.list.map((listEn) => {
+            console.log('listEn',listEn);
             
             return(
-            // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
             <Card 
-                userId = {listDev.userId}
-                firstName = {listDev.firstName}
-                lastName = {listDev.lastName}
-                city={listDev.city}
-                skills= {listDev.skills}
-                title={listDev.title}
-        
+            id={listEn.id}
+            compagnyName={listEn.compagnyName}
+            title={listEn.title}
+            city={listEn.city}
+            contracts={listEn.contracts}
+            date={listEn.date}
+            skills= {listEn.skills}
             
             />
             )
         })
     }
+
+
+    
 
     render(){
         return(

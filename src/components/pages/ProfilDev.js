@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbarlogin from '../core/Navbar';
 import CardProfil from '../dev/CardProfil';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 
 class ProfilDev extends React.Component {

@@ -1,13 +1,13 @@
 [
-  {"id":"1",
-  "compagnyName":"konexio", 
+  {"id":"666",
+  "compagnyName":"Prout", 
   "title":"React full stack",
   "city":"Paris",
   "contracts":"CDD",
   "date":"12/12/2020",
   "skills":["html ","css ","javascrip"]
 },
-  {"id":"1",
+  {"id":"2",
   "compagnyName":"tictac", 
   "title":"React front",
   "city":"Paris",
@@ -15,7 +15,7 @@
   "date":"12/12/2020",
   "skills":["react ","nodeJs ","javascrip"]
 },
-  {"id":"1",
+  {"id":"3",
   "compagnyName":"station F", 
   "title":"React back",
   "city":"Paris",
@@ -23,7 +23,7 @@
   "date":"12/12/2020",
   "skills":["html ","nodeJs ","javascrip"]
 },
-  {"id":"1",
+  {"id":"4",
   "compagnyName":"konexio", 
   "title":"React full stack",
   "city":"Paris",

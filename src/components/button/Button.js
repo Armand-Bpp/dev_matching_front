@@ -5,7 +5,7 @@ class Button extends React.Component{
     render(){
         return(
             <div>
-                <button className="btn btn-outline-dark"
+                <button className={!this.props.selected ? "btn btn-outline-dark" : "btn btn-dark"}
                 onClick={this.props.onClickFn}
                 >
                     {this.props.children}
