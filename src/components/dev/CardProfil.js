@@ -7,30 +7,17 @@ class CardProfil extends React.Component {
             <div className="container profildev">
                 <div className="row mt-5">
                     <div className="mr-auto ml-auto col col-12 col-md-8 col-lg-8">
-                        <div className="CustomCard hoverCustomCard">
-                            <div className="shadow-sm CustomCardheader text-white btn-primary">
-                                <img src={this.props.banner} />
-                            </div>
-                        </div>
-                        <div className="avatar">
+                        <div className="avatar text-center mt-4">
                             <img className="shadow-lg" alt="" src={this.props.picture} />
                             <div className=" addfav">
-                                <button type="button" className="addfavoris btn-sm btn shadow bg-white"><i class="far fa-bell"></i></button>
+                                <button type="button" className="addfavoris btn-sm btn shadow bg-dark"><i className="far fa-bell"></i></button>
                             </div>
                         </div>
-                        <div className="infos">
-                            <p className="font-weight-bold">{this.props.firstName} {this.props.lastName}</p>
+                        <div className="infos text-center">
+                            <p className="font-weight-bold name"> Konexio{this.props.firstName} {this.props.lastName}</p>
                             <p className=" ville"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</p>
-                        </div>
-                        <div className="float-right contfav d-none d-lg-block d-md-block">
-                            <button type="button" class="btn btn-primary btn-lg addprofilfav shadow"><i class="fas fa-bookmark"></i> Ajouter ce profil à mes favoris</button>
-                            <button type="button" class=" ml-2 btn btn-primary btn-lg contactprofilfav shadow"><i class="fas fa-envelope"></i> Contactez-moi</button>
-                        </div>
-                        <div className="titre d-none d-lg-block d-md-block pb-4">
-                            <h4 className="mb-2"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
-                        </div>
-                        <div className="titre2 d-lg-none d-sm-block d-md-none">
-                            <h5 className="mb-2"><i class="fas fa-star"></i> Titre : {this.props.title} </h5>
+                            <h4 className="mb-2 titre d-none d-lg-block d-md-block"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
+                            <h4 className="mb-2 titre2 d-lg-none d-sm-block d-md-none"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
                         </div>
                         <div className="bio shadow px-4 rounded">
                             <h3 className="pt-2">Biographie</h3>
