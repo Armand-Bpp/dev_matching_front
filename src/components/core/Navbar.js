@@ -11,11 +11,11 @@ class Navbarlogin extends React.Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="/"><i class="fas fa-th-large"></i> Accueil <span className="sr-only">(current)</span></Nav.Link>
-                        <Nav.Link href="favorites"><i class="far fa-bookmark"></i> Favoris</Nav.Link>
-                        <Nav.Link href="listjobs"><i class="fas fa-briefcase"></i> Jobs</Nav.Link>
-                        <Nav.Link href="matching"><i class="fas fa-network-wired"></i> Matching</Nav.Link>
-                        <Nav.Link href="addjobs"><i class="fas fa-file-medical"></i> Ajouter un job</Nav.Link>
+                        <Nav.Link href="/">Accueil<span className="sr-only">(current)</span></Nav.Link>
+                        <Nav.Link href="favorites">Favoris</Nav.Link>
+                        <Nav.Link href="listjobs">Jobs</Nav.Link>
+                        <Nav.Link href="matching">Matching</Nav.Link>
+                        <Nav.Link href="addjobs">Ajouter un job</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <div className="ml-auto">

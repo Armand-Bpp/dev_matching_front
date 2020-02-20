@@ -1,7 +1,12 @@
 import React from 'react';
 import Navbarlogin from '../core/Navbar';
 import CardProfil from '../dev/CardProfil';
+<<<<<<< HEAD
 // import styled from 'styled-components';
+=======
+import styled from 'styled-components';
+import Api from '../../utils/Api';
+>>>>>>> 916ca249434c9627805fe8549a3b8302aa2ff277
 
 
 class ProfilDev extends React.Component {
@@ -39,7 +44,6 @@ class ProfilDev extends React.Component {
             title = {this.state.profilId.title}
             banner = {this.state.profilId.banner}
             skills = {this.state.profilId.skills}
-            
             /> 
         )
     }

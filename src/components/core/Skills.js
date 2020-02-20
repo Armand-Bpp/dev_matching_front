@@ -24,7 +24,7 @@ class Skills extends React.Component {
                 <ul className="d-inline list-unstyled">
                     {this.state.skills.map(item => (
                         <li className="d-inline ml-2" key={item.name}>
-                            {item.name}
+                            <h4 className="d-inline"><span class="badge badge-secondary">{item.name}</span></h4>
                         </li>
                     ))}
                 </ul>
