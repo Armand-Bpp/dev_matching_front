@@ -49,6 +49,7 @@ class ListDev extends React.Component{
              city={listDev.city}
              skills= {listDev.skills}
              title={listDev.title}
+             experience = {listDev.experience}
             
             
             />
