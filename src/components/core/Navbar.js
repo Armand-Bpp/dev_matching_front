@@ -14,6 +14,7 @@ class Navbarlogin extends React.Component {
                         <Nav.Link href="/">Accueil<span className="sr-only">(current)</span></Nav.Link>
                         <Nav.Link href="favorites">Favoris</Nav.Link>
                         <Nav.Link href="listjobs">Jobs</Nav.Link>
+                        <Nav.Link href="listdev">Developpeurs</Nav.Link>
                         <Nav.Link href="matching">Matching</Nav.Link>
                         <Nav.Link href="addjobs">Ajouter un job</Nav.Link>
                         </Nav>

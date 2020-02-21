@@ -17,7 +17,7 @@ class ListDev extends React.Component{
       
     componentDidMount(){
 
-        const url = `http://localhost:3001/users`;
+        const url = `http://192.168.1.219:3001/users`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())

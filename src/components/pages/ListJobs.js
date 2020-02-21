@@ -34,12 +34,12 @@ class ListJobs extends React.Component{
         return this.state.listEn.map((listEn) => {
             return(
             <Card 
-                 _id={listEn._id}
-                 compagnyName={listEn.compagnyName}
+                 id={listEn.id}
+                 companyName={listEn.companyName}
                  title={listEn.title}
                  city={listEn.city}
-                 contracts={listEn.contracts}
-                 date={listEn.date}
+                 contract={listEn.contract}
+                 created={listEn.created}
                  skills= {listEn.skills}
                      />
             )
