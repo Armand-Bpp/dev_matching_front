@@ -30,6 +30,7 @@ class ProfilJobs extends React.Component {
         return (
             <CardProfilJobs 
             position = {this.state.profilJobId.position}
+            picture = {this.state.profilJobId.picture}
             address = {this.state.profilJobId.address}
             contact = {this.state.profilJobId.contact}
             picture = {this.state.profilJobId.picture}

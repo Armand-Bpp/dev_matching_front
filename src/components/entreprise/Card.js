@@ -96,6 +96,25 @@ class Card extends React.Component {
                                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
                                             <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
                                         </ul>
+                                        <div className="d-inline">
+                                            <ul className="d-inline list-unstyled">
+                                                <li className="d-inline ml-2">
+                                                    <h5 className="d-inline"><span class="badge badge-secondary">MongoDb</span></h5>
+                                                </li>
+                                                <li className="d-inline ml-2">
+                                                    <h5 className="d-inline"><span class="badge badge-secondary">Nodejs</span></h5>
+                                                </li>
+                                                <li className="d-inline ml-2">
+                                                    <h5 className="d-inline"><span class="badge badge-secondary">Javascript</span></h5>
+                                                </li>
+                                                <li className="d-inline ml-2">
+                                                    <h5 className="d-inline"><span class="badge badge-secondary">HTML</span></h5>
+                                                </li>
+                                                <li className="d-inline ml-2">
+                                                    <h5 className="d-inline"><span class="badge badge-secondary">Bootstrap</span></h5>
+                                                </li>
+                                            </ul>
+                                        </div>
                                         {/* {this.renderSkills()} */}
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >

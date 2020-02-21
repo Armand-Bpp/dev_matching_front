@@ -15,7 +15,7 @@ class CardProfilJobs extends React.Component {
                                 <div class="row justify-content-center">
                                     <div class="col-lg-3 order-lg-2">
                                         <div class="card-profile-image avatar ">
-                                            <img src="img/dev.svg" className="" />
+                                            <img src={this.props.picture} className="" />
                                         </div>
                                     </div>
                                 </div>

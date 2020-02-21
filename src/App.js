@@ -9,6 +9,7 @@ import Favorites from './components/pages/Favorites';
 import ProfilDev from './components/pages/ProfilDev';
 import AddJobs from './components/pages/AddJobs';
 import ProfilJobs from './components/pages/ProfilJobs';
+import ProfilEnt from './components/pages/ProfilEntreprise';
 import Api from './utils/Api';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
@@ -47,6 +48,9 @@ class App extends React.Component {
                       </Route>
                       <Route path="/profildev">
                         <ProfilDev/>
+                      </Route>
+                      <Route path="/profilentreprise">
+                        <ProfilEnt/>
                       </Route>
                       <Route path="/login">
                         <Login/>
