@@ -50,6 +50,7 @@ class ListDev extends React.Component{
              skills= {listDev.skills}
              title={listDev.title}
              experience = {listDev.experience}
+             contract = {listDev.contract}
             
             
             />

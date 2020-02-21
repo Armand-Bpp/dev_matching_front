@@ -1,6 +1,9 @@
 import React from 'react';
 import Card from '../entreprise/Card';
 import Navbarlogin from '../core/Navbar';
+// import ProfilJobs from '../pages/ProfilJobs';
+// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
 // import Button from '../button/Button';
 
 class ListJobs extends React.Component{
@@ -32,14 +35,19 @@ class ListJobs extends React.Component{
     
     renderListEn(){
         return this.state.listEn.map((listEn) => {
+
+
+            console.log(listEn)
+
             return(
             <Card 
-                 id={listEn.id}
+                 id={listEn._id}
+                 userId={listEn.userId}
                  companyName={listEn.companyName}
                  title={listEn.title}
                  city={listEn.city}
                  contract={listEn.contract}
-                 created={listEn.created}
+                 date={listEn.date}
                  skills= {listEn.skills}
                      />
             )
@@ -52,6 +60,7 @@ class ListJobs extends React.Component{
                 <Navbarlogin  />
                 <div className="jobs">
                     <h2 className="text-center mb-4">List jobs</h2>
+                    
                     {this.renderListEn()}
                 </div>
             </div>
@@ -60,3 +69,5 @@ class ListJobs extends React.Component{
 }
 
 export default ListJobs;
+
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/Button';
 import "../../components/pages/ListJobs.css"
-import { BrowserRouter as Router, Route, Link, Switch,withRouter } from 'react-router-dom';
+import { BrowserRouter as Router,withRouter } from 'react-router-dom';
 import ProfilDev from '../pages/ProfilDev';
 import Api from '../../utils/Api';
 
@@ -47,10 +47,10 @@ class Card extends React.Component {
         } = Api.getUser(); 
         //  offers
          const id = this.props._id;
-         console.log("id de l'offre",this.props._id)
+         console.log("id de l'offre",_id)
         //  users
-        const userId= this.props.userId
-        console.log('id du users',_id)
+        const userId = _id;
+        console.log('id du users',this.props.userId)
         // console.log(id, "idd");
         // console.log(_id,"_idddddd");
         // console.log(userId, "userId")
@@ -59,12 +59,12 @@ class Card extends React.Component {
         
         
         
-        console.log(_id, '_id')
+        // console.log(_id, '_id')
         const {props} =this;
         
         // fetch('http://localhost:3000/api/jobs.json/${id}', {
             // fetch(`http://192.168.1.219:3001/favorites/users/?typeId=offer&offerId=${id}`, {
-        fetch(`http://192.168.1.219:3001/favorites/users/${_id}?typeId=offer&offerId=${id}`, {
+        fetch(`http://192.168.1.219:3001/favorites/users/${userId}?typeId=offer&offerId=${id}`, {
         method:'POST'})
         .then(function(response) {
             console.log('response',response);
