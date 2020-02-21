@@ -45,6 +45,7 @@ class ProfilDev extends React.Component {
             github = {this.state.profilId.github}
             linkedin = {this.state.profilId.linkedin}
             role = {this.state.profilId.role}
+            skills = {this.state.profilId.skills}
             /> 
         )
     }
