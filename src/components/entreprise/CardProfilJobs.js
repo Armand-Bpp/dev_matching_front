@@ -15,7 +15,7 @@ class CardProfilJobs extends React.Component {
                                 <div class="row justify-content-center">
                                     <div class="col-lg-3 order-lg-2">
                                         <div class="card-profile-image avatar ">
-                                            <img src="img/dev.svg" className="" />
+                                            <img src={this.props.picture} className="" />
                                         </div>
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@ class CardProfilJobs extends React.Component {
                                             </div>
                                         </div>
                                         <div>
-                                            <h4 className="mb-5 text-center"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
+                                            <h4 className="mb-5 text-center"><i class="fas fa-star"></i> Titre {this.props.title} </h4>
                                             <ul class="list-group list-group-flush mb-4">
                                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                                     Poste
@@ -57,10 +57,6 @@ class CardProfilJobs extends React.Component {
                                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                                     Contrat
                                                     <span class="">{this.props.contract}</span>
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between align-items-center">
-                                                    Durée
-                                                    <span class="">{this.props.duration}</span>
                                                 </li>
                                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                                     Expérience

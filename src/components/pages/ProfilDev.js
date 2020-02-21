@@ -39,6 +39,12 @@ class ProfilDev extends React.Component {
             city = {this.state.profilId.city}
             title = {this.state.profilId.title}
             banner = {this.state.profilId.banner}
+            email = {this.state.profilId.email}
+            experience = {this.state.profilId.experience}
+            contract = {this.state.profilId.contract}
+            github = {this.state.profilId.github}
+            linkedin = {this.state.profilId.linkedin}
+            role = {this.state.profilId.role}
             skills = {this.state.profilId.skills}
             /> 
         )
