@@ -20,7 +20,7 @@ class ProfilJobs extends React.Component {
       .then(json =>{
           console.log("json", json);
           this.setState({
-            profilJobId : json.data[0]
+            profilJobId : json.data[3]
           })
       });
     }
