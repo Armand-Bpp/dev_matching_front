@@ -14,10 +14,10 @@ class CardProfil extends React.Component {
                             </div>
                         </div>
                         <div className="infos text-center">
-                            <p className="font-weight-bold name"> Konexio{this.props.firstName} {this.props.lastName}</p>
-                            <p className=" ville"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</p>
-                            <h4 className="mb-2 titre d-none d-lg-block d-md-block"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
-                            <h4 className="mb-2 titre2 d-lg-none d-sm-block d-md-none"><i class="fas fa-star"></i> Titre : {this.props.title} </h4>
+                            <p className="font-weight-bold name">{this.props.firstName} {this.props.lastName}</p>
+                            <p className=" ville"><i class="fas fa-map-marker-alt"></i>   {this.props.city}</p>
+                            <h4 className="mb-2 titre d-none d-lg-block d-md-block"><i class="fas fa-star"></i>     {this.props.title} </h4>
+                            <h4 className="mb-2 titre2 d-lg-none d-sm-block d-md-none"><i class="fas fa-star"></i>    {this.props.title} </h4>
                         </div>
                         <div className="bio shadow px-4 rounded">
                             <h3 className="pt-2">Biographie</h3>
@@ -26,7 +26,7 @@ class CardProfil extends React.Component {
                             </p>
                         </div>
                         <div className="competence mt-5">
-                            <h4 className="mb-2">Compétences</h4>
+                            <h4 className="mb-2"> <i class="fas fa-star"></i>   Compétences</h4>
                             <hr/>
                             <ul className="list-unstyled list-inline">
                                 <li className="list-inline-item">
