@@ -33,9 +33,6 @@ class App extends React.Component {
                       <Route path="/listjobs">
                         <ListJobs/>
                       </Route>
-                      <Route path="/listjobs/:id" >
-                        <ListJobs/>
-                      </Route>
                       <Route path="/addjobs">
                         <AddJobs/>
                       </Route>
