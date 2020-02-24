@@ -13,7 +13,7 @@ class ProfilJobs extends React.Component {
     }
 
     componentDidMount(){
-      const url = `http://192.168.1.219:3001/offers`;
+      const url = `http://172.20.10.9:3001/offers`;
       console.log('url', url);
       fetch(url)
       .then(res => res.json())
