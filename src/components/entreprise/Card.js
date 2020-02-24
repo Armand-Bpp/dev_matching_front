@@ -94,7 +94,7 @@ class Card extends React.Component {
                                         <h4 className="card-title">{this.props.title}</h4>
                                         <ul className="list-unstyled list-inline">
                                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
-                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
+                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> 24 Mars 2020</h5></li>
                                         </ul>
                                         <div className="d-inline">
                                             <ul className="d-inline list-unstyled">
@@ -119,6 +119,9 @@ class Card extends React.Component {
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
+                                    </div>
+                                    <div classeName="offset-11">
+                                    <a class="btn btn-info " href="/profilentreprise" role="button">Voir</a>
                                     </div>
                                 </div>
                             </div>

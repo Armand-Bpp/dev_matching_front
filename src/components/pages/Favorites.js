@@ -26,7 +26,7 @@ class Favorites extends React.Component {
         console.log(role, "role");
         console.log('id', _id)
         if(role  ===  "developer"){
-          const url = `http://192.168.1.219:3001/favorites/users/${_id}?typeId=offer`;
+          const url = `http://172.20.10.9:3001/favorites/users/${_id}?typeId=offer`;
         console.log('url', url);
         fetch(url)
             .then(res => res.json())

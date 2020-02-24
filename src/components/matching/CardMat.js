@@ -31,18 +31,18 @@ class Card extends React.Component {
                                         <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
-                                        <h3 className="card-text">Capgimini</h3>
-                                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : issy les moulineaux</h5>
-                                        <h4 className="card-title">Developpeus Full stack</h4>
+                                        <h3 className="card-text">{this.props.companyName}</h3>
+                                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</h5>
+                                        <h4 className="card-title">{this.props.title}</h4>
                                         <ul className="list-unstyled list-inline">
-                                            <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> Stage</h5></li>
-                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> 25 Mars 2020</h5></li>
+                                            <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
+                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
                                         </ul>
                                         {/* {this.renderSkills()} */}
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
-                                        <a href="#" class="badge badge-primary">80%</a>
+                                        <a href="#" class="badge badge-primary">{this.props.score} %</a>
                                     </div>
                                 </div>
                             </div>
