@@ -86,7 +86,7 @@ class Card extends React.Component {
                             <div class="card-body">
                                 <div className="row">
                                     <div  className="profil col-12 col-md-4 col-lg-3">
-                                        <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
+                                        <img className="shadow  img-fluid text-center" alt="" src={this.props.picture}/>
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
                                         <h3 className="card-text">{this.props.companyName}</h3>

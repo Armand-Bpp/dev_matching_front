@@ -48,6 +48,7 @@ class ListJobs extends React.Component{
                  city={listEn.city}
                  contract={listEn.contract}
                  date={listEn.date}
+                 picture={listEn.picture}
                  skills= {listEn.skills}
                      />
             )
