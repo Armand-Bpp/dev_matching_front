@@ -90,7 +90,7 @@ class Card extends React.Component {
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
                                         <h3 className="card-text">{this.props.companyName}</h3>
-                                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</h5>
+                                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> {this.props.city}</h5>
                                         <h4 className="card-title">{this.props.title}</h4>
                                         <ul className="list-unstyled list-inline">
                                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
