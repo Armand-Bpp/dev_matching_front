@@ -48,7 +48,7 @@ class CardProfilJobs extends React.Component {
                                             </div>
                                         </div>
                                         <div>
-                                            <h4 className="mb-5 text-center"><i class="fas fa-star"></i> Titre {this.props.title} </h4>
+                                            <h4 className="mb-5 text-center"><i class="fas fa-star"></i> {this.props.title} </h4>
                                             <ul class="list-group list-group-flush mb-4">
                                                 <li class="list-group-item d-flex justify-content-between align-items-center">
                                                     Poste

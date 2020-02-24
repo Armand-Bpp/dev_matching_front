@@ -13,20 +13,26 @@ class Matching extends React.Component{
     this.renderListMat=this.renderListMat.bind(this);
     }
 
-    componentDidMount(){
-        const url =`http://192.168.1.219:3001/matching`;
-        // const url =`http://localhost:3000/api/jobs.json`;
-        console.log('url',url);
-        fetch(url)
-        .then(res => res.json())
-        .then(json =>{
-            console.log('json',json);
+    async componentDidMount(){
+        const resM = await fetch(`http://192.168.1.219:3001/matching`);
+        const jsonM = await resM.json()
+        const resO = await fetch(`http://192.168.1.219:3001/offers`)
+        const jsonO = await resO.json()
             this.setState({
-                listMat: json.data
-                // listMat: json
+                listMat: jsonM.data , listEn: jsonO.data            
             });
+        // console.log('url',url);
+        // fetch(url)
+        // .then(res => res.json())
+        // .then(json =>{
+        //     console.log('json',json);
+        //     this.setState({
+        //         listMat: jsonM.data , listEn: jsonO.data
+                
             
-        });
+        //     });
+            
+        // });
         
     }
     

@@ -17,14 +17,14 @@ class Navbarlogin extends React.Component {
                             <Nav.Link href="listdev">Developpeurs</Nav.Link>
                             <Nav.Link href="matching">Matching</Nav.Link>
                             <Nav.Link href="addjobs">Ajouter un job</Nav.Link>
-                            <Nav.Link href="profildev">Profil-dev</Nav.Link>
-                            <Nav.Link href="profilentreprise">Profil-entreprise</Nav.Link>
+                            {/* <Nav.Link href="profildev">Profil-dev</Nav.Link>
+                            <Nav.Link href="profilentreprise">Profil-entreprise</Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                     <div className="ml-auto">
                         <i class="fas fa-envelope mr-4"></i>
                         <i class="fas fa-bell mr-4"></i>
-                        <a className="linkprofil" href="profildev"><i class="fas fa-user-circle"></i></a>
+                        <a className="linkprofil" href="profilentreprise"><i class="fas fa-user-circle"></i></a>
                     </div> 
                 </Navbar>
             </div>

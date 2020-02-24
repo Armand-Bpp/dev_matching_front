@@ -42,7 +42,7 @@ class Card extends React.Component {
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
-                                        <a href="#" class="badge badge-primary">{this.props.score} %</a>
+                                       <h1> <a href="#" class=" badge badge-primary">{this.props.score} %</a></h1>
                                     </div>
                                 </div>
                             </div>

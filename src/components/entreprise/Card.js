@@ -85,7 +85,7 @@ class Card extends React.Component {
                         <div class="card col-lg-8 ml-auto mr-auto mb-5 shadow">
                             <div class="card-body">
                                 <div className="row">
-                                    <div  className="profil col-12 col-md-4 col-lg-4">
+                                    <div  className="profil col-12 col-md-4 col-lg-3">
                                         <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
@@ -96,33 +96,40 @@ class Card extends React.Component {
                                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
                                             <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> 24 Mars 2020</h5></li>
                                         </ul>
-                                        <div className="d-inline">
-                                            <ul className="d-inline list-unstyled">
-                                                <li className="d-inline ml-2">
-                                                    <h5 className="d-inline"><span class="badge badge-secondary">MongoDb</span></h5>
-                                                </li>
-                                                <li className="d-inline ml-2">
-                                                    <h5 className="d-inline"><span class="badge badge-secondary">Nodejs</span></h5>
-                                                </li>
-                                                <li className="d-inline ml-2">
-                                                    <h5 className="d-inline"><span class="badge badge-secondary">Javascript</span></h5>
-                                                </li>
-                                                <li className="d-inline ml-2">
-                                                    <h5 className="d-inline"><span class="badge badge-secondary">HTML</span></h5>
-                                                </li>
-                                                <li className="d-inline ml-2">
-                                                    <h5 className="d-inline"><span class="badge badge-secondary">Bootstrap</span></h5>
-                                                </li>
-                                            </ul>
+                                        <div className="row">
+                                            <div className="col-12 col-lg-10 col-md-10">
+                                                <div className="d-inline">
+                                                    <ul className="d-inline list-unstyled">
+                                                        <li className="d-inline ml-2">
+                                                            <h5 className="d-inline"><span class="badge badge-secondary">MongoDb</span></h5>
+                                                        </li>
+                                                        <li className="d-inline ml-2">
+                                                            <h5 className="d-inline"><span class="badge badge-secondary">Nodejs</span></h5>
+                                                        </li>
+                                                        <li className="d-inline ml-2">
+                                                            <h5 className="d-inline"><span class="badge badge-secondary">Javascript</span></h5>
+                                                        </li>
+                                                        <li className="d-inline ml-2">
+                                                            <h5 className="d-inline"><span class="badge badge-secondary">HTML</span></h5>
+                                                        </li>
+                                                        <li className="d-inline ml-2">
+                                                            <h5 className="d-inline"><span class="badge badge-secondary">Bootstrap</span></h5>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="col-12 col-lg-2 col-md-2">
+                                                <a class="btn btn-info  " href="/profiljobs" role="button">Voir</a>
+                                            </div>
+
                                         </div>
+                                        
                                         {/* {this.renderSkills()} */}
                                     </div>
                                     <div className="bouton col-12 col-lg-2 col-md-2" >
                                         <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
                                     </div>
-                                    <div classeName="offset-11">
-                                    <a class="btn btn-info " href="/profilentreprise" role="button">Voir</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
