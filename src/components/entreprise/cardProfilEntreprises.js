@@ -25,7 +25,7 @@ class CardProfilEnt extends React.Component {
                                     <ul className="list-unstyled list-inline">
                                         <li className=""><h2 className="font-weight-bold name"> {this.props.companyName}</h2></li>
                                         <li className=""><p className=" ville"><i class="fas fa-map-marker-alt"></i> {this.props.city}</p></li>
-                                        <li className=""><p className=" ville"><i class="fas fa-key"></i> siret : {this.props.siret}</p></li>
+                                        {/* <li className=""><p className=" ville"><i class="fas fa-key"></i> {this.props.linkedin}</p></li> */}
                                         <li className="list-inline-item"><p className=" ville"><i class="fas fa-envelope-open-text"></i> {this.props.email}</p></li>
                                         <li className="list-inline-item"><li className="list-inline-item"><i class="fab fa-linkedin-in"></i></li></li>
                                     </ul>
