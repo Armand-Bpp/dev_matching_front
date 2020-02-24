@@ -64,8 +64,14 @@ class CardProfilJobs extends React.Component {
                                                 </li>
                                             </ul>
                                             <div>
+                                            {/* {this.props.description} */}
                                                 <h2>Description</h2>
-                                                <p>{this.props.description}</p>
+                                                <p>
+                                                    Travailler avec une équipe de passionnés, des experts en Web, Mobile, UX Design.
+                                                    Avoir la possibilité de travailler sur de nombreuses technologies et typologies de projets mais aussi de développer votre veille avec des projets internes.
+                                                    Travailler exclusivement sur des projets au forfait au sein de nos locaux.
+                                                    Avoir l'opportunité de partager votre expertise, de créer un dialogue avec les équipes client et de participer au développement d'in-Tact.
+                                                    Qualité de vie : possibilité d'adapter votre temps de travail dans le cadre de la conciliation vie professionnelle / vie privée.</p>
                                             </div>
                                         </div>
                                     </div>
