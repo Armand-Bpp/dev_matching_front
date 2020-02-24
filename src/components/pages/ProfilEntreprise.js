@@ -15,7 +15,7 @@ class ProfilEnt extends React.Component {
     }
 
     componentDidMount(){
-      const url = `http://192.168.1.219:3001/users/5e46634bd7309f1e4c550f20`;
+      const url = `http://172.20.10.9:3001/users/5e46634bd7309f1e4c550f20`;
       console.log('url', url);
       fetch(url)
       .then(res => res.json())

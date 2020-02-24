@@ -17,6 +17,8 @@ class Navbarlogin extends React.Component {
                             <Nav.Link href="listdev">Developpeurs</Nav.Link>
                             <Nav.Link href="matching">Matching</Nav.Link>
                             <Nav.Link href="addjobs">Ajouter un job</Nav.Link>
+                            <Nav.Link href="profildev">Profil-dev</Nav.Link>
+                            <Nav.Link href="profilentreprise">Profil-entreprise</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <div className="ml-auto">

@@ -15,7 +15,7 @@ class ProfilDev extends React.Component {
     }
 
     componentDidMount(){
-      const url = `http://192.168.1.219:3001/users/5e456dfb899c923f10b08fb7`;
+      const url = `http://172.20.10.9:3001/users/5e456dfb899c923f10b08fb7`;
       console.log('url', url);
       fetch(url)
       .then(res => res.json())

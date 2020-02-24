@@ -32,7 +32,7 @@ class Register extends React.Component {
                         </div>
                         <button type="submit" className="btn btn-lg btn-block inscription shadow">M'inscrire</button>
                     </form>
-                    <p className="mt-4 text-center">J'ai déjà un compte, <a href="#">je me connecte</a></p>
+                    <p className="mt-4 text-center">J'ai déjà un compte, <a href="/listjobs">je me connecte</a></p>
                 </div>
             </div>
         )
