@@ -27,7 +27,7 @@ class Card extends React.Component {
                         <div class="card col-lg-8 ml-auto mr-auto mb-5 shadow">
                             <div class="card-body">
                                 <div className="row">
-                                    <div  className="profil col-12 col-md-4 col-lg-4">
+                                    <div  className="profil col-12 col-md-4 col-lg-3">
                                         <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
@@ -40,7 +40,7 @@ class Card extends React.Component {
                                         </ul>
                                         {/* {this.renderSkills()} */}
                                     </div>
-                                    <div className="bouton col-12 col-lg-2 col-md-2" >
+                                    <div className="bouton col-12 col-lg-2 col-md-3" >
                                         <Button selected={this.state.selected}  onClickFn={this.onsubmit}><i class="far fa-bookmark"></i></Button>
                                        <h1> <a href="#" class=" badge badge-primary">{this.props.score} %</a></h1>
                                     </div>
