@@ -40,6 +40,17 @@ class Matching extends React.Component{
     renderListMat(){
         return this.state.listMat.map((listMat) => {
 
+            const offreId = listMat.data
+            let offerDetail
+            this.state.listEn.forEach(element => {
+                if (element._id === offreId){
+                    console.log("okeyyyyyyy",element);
+                    offerDetail = element
+                    
+                }
+            });
+
+            if(!offerDetail){ return null }
 
             console.log(listMat)
 
@@ -53,13 +64,21 @@ class Matching extends React.Component{
                  typeId={listMat.typeId}
                  created= {listMat.created}
 
+                //  userId={offerDetail.userId}
+                 companyName={offerDetail.companyName}
+                 title={offerDetail.title}
+                 city={offerDetail.city}
+                 contract={offerDetail.contract}
+                 date={offerDetail.date}
+                 skills= {offerDetail.skills}
+
                  userId={listMat.userId}
-                 companyName={listMat.companyName}
-                 title={listMat.title}
-                 city={listMat.city}
-                 contract={listMat.contract}
-                 date={listMat.date}
-                 skills= {listMat.skills}
+                //  companyName={listMat.companyName}
+                //  title={listMat.title}
+                //  city={listMat.city}
+                //  contract={listMat.contract}
+                //  date={listMat.date}
+                //  skills= {listMat.skills}
                 
                      />
             )
