@@ -76,16 +76,16 @@ class Home extends React.Component {
                       <img className="img-fluid" src="img/entreprise.svg" />
                   </div>
                   <div className="col-12 col-md-6 col-lg-6 mt-5 pt-5">
-                      <h2 className="mt-4">Entreprises</h2>
+                      <h2 className="mt-4">Entreprise</h2>
                       <hr className="ligne" />
                       <p>
                       Créez votre profil entreprise et renseignez vos
                       besoins pour avoir accès notre liste de suggestion 
-                      de profil qui matchent à 80% avec votre demande,
+                      de profil qui matchent avec votre demande,
                       vous n'aurez plus qu'à choisir les meilleurs. Utilisez
                       notre outil pour mettre en ligne vos offres d'emplois.     
                       </p>
-                      <button type="button" className="btn join  btn-lg  btn-block shadow">Crée un profil entreprise</button>
+                      <button type="button" className="btn join  btn-lg  btn-block shadow">Créer un profil entreprise</button>
                   </div>
               </div>
               <div className="row" id="dev">
@@ -98,10 +98,10 @@ class Home extends React.Component {
                       listes interminables à longueur de journée, rejoignez
                       notre réseau d'entreprises et trouvez les jobs de vos
                       rêve, nous allons vous proposer que des profils
-                      d'entreprises et des jobs qui matchent à plus de 80%,
+                      d'entreprises et des jobs qui matchent,
                       lancez-vous dès maintenant pour gagner du temps.   
                       </p>
-                      <button type="button" className="btn join btn-lg btn-block shadow">Crée un profil développeur</button>
+                      <button type="button" className="btn join btn-lg btn-block shadow">Créer un profil développeur</button>
                   </div>
                   <div className="col-12 col-md-6 col-lg-6 mt-5 pt-5">
                       <img className="img-fluid" src="img/dev.svg" />

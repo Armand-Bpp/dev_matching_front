@@ -62,7 +62,7 @@ class Matching extends React.Component{
                  data={listMat.date}
                  score={listMat.score}
                  typeId={listMat.typeId}
-                 created= {listMat.created}
+                //  created= {listMat.created}
 
                 //  userId={offerDetail.userId}
                  companyName={offerDetail.companyName}
@@ -71,6 +71,8 @@ class Matching extends React.Component{
                  contract={offerDetail.contract}
                  date={offerDetail.date}
                  skills= {offerDetail.skills}
+                 picture= {offerDetail.picture}
+                 created= {offerDetail.created}
 
                  userId={listMat.userId}
                 //  companyName={listMat.companyName}

@@ -28,7 +28,7 @@ class Card extends React.Component {
                             <div class="card-body">
                                 <div className="row">
                                     <div  className="profil col-12 col-md-4 col-lg-3">
-                                        <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
+                                        <img className="shadow  img-fluid text-center" alt="" src={this.props.picture}/>
                                     </div>
                                     <div  className="col-lg-6 col-12 col-md-6">
                                         <h3 className="card-text">{this.props.companyName}</h3>
@@ -36,7 +36,7 @@ class Card extends React.Component {
                                         <h4 className="card-title">{this.props.title}</h4>
                                         <ul className="list-unstyled list-inline">
                                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
-                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> {this.props.date}</h5></li>
+                                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> 19/02/2020</h5></li>
                                         </ul>
                                         {/* {this.renderSkills()} */}
                                     </div>
