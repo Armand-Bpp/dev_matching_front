@@ -36,7 +36,7 @@ class CardProfilJobs extends React.Component {
                                                             <span class="description"><p>{this.props.city}</p></span>
                                                         </div>
                                                         <div>
-                                                            <span class=""><i class="fas fa-map-marked-alt"></i> Region</span>
+                                                            <span class=""><i class="fas fa-map-marked-alt"></i> Région</span>
                                                             <span class="description"><p>{this.props.region}</p></span>
                                                         </div>
                                                         <div>

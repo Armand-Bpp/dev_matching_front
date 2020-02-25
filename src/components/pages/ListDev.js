@@ -40,6 +40,8 @@ class ListDev extends React.Component{
 
     renderListDev(){
         return this.state.listDev.map((listDev) => {
+
+            if (listDev.role === 'developer'){
             return(
             // <p key ={listDev.id}>{listDev.lastName}  {listDev.firstName} {listDev.city} {listDev.skills}  </p>
             <Card 
@@ -51,10 +53,12 @@ class ListDev extends React.Component{
              title={listDev.title}
              experience = {listDev.experience}
              contract = {listDev.contract}
+             picture = {listDev.picture}
             
             
             />
             )
+            }
         })
     }
     render(){
@@ -64,7 +68,7 @@ class ListDev extends React.Component{
                     <Navbarlogin  />
                 </div>
                 <div className="listdeveloppeurs">
-                        <h2 className="text-center mb-4">Liste développeurs</h2>
+                        <h2 className="text-center mb-4">Liste des développeurs</h2>
                         {this.renderListDev()}
                 </div>
             </div>

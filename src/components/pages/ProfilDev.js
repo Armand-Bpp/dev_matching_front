@@ -9,12 +9,14 @@ class ProfilDev extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            profilId : []
+            profilId : [],
         }
         this.renderProfilDev = this.renderProfilDev.bind(this);
     }
 
     componentDidMount(){
+        // const id = this.props.id
+        // console.log(id, 'id')
       const url = `http://192.168.1.219:3001/users/5e456dfb899c923f10b08fb7`;
       console.log('url', url);
       fetch(url)

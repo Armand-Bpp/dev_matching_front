@@ -60,7 +60,7 @@ class ListJobs extends React.Component{
             <div>
                 <Navbarlogin  />
                 <div className="jobs">
-                    <h2 className="text-center mb-4">List jobs</h2>
+                    <h2 className="text-center mb-4">Offres d'emploi</h2>
                     
                     {this.renderListEn()}
                 </div>

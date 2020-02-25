@@ -77,15 +77,15 @@ class Card extends React.Component {
             <div class="card-body">
                 <div className="row">
                     <div  className="profil col-12 col-md-4 col-lg-3">
-                        <img className="shadow  img-fluid text-center" alt="" src="img/dev.png"/>
+                        <img className="shadow  img-fluid text-center" alt="" src={this.props.picture}/>
                     </div>
                     <div  className="col-lg-6 col-12 col-md-6">
                         <h3 className="card-text">{this.props.firstName} {this.props.lastName}</h3>
-                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> Ville : {this.props.city}</h5>
+                        <h5 className="card-text"><i class="fas fa-map-marker-alt"></i> {this.props.city}</h5>
                         <h4 className="card-title">{this.props.title}</h4>
                         <ul className="list-unstyled list-inline">
                             <li className="list-inline-item"><h5 className="card-text"><i class="fas fa-clipboard-list"></i> {this.props.contract}</h5></li>
-                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i> experience:  {this.props.experience} ans</h5></li>
+                            <li className="list-inline-item ml-2"><h5 className="card-text"><i class="far fa-calendar-alt"></i>{this.props.experience} ans d'expérience</h5></li>
                         </ul>
                         <div className="row">
                             <div className="col-12 col-lg-10 col-md-10">
@@ -95,16 +95,16 @@ class Card extends React.Component {
                                             <h5 className="d-inline"><span class="badge badge-secondary">MongoDb</span></h5>
                                         </li>
                                         <li className="d-inline ml-2">
-                                            <h5 className="d-inline"><span class="badge badge-secondary">Nodejs</span></h5>
+                                            <h5 className="d-inline"><span class="badge badge-secondary">NodeJs</span></h5>
                                         </li>
                                         <li className="d-inline ml-2">
-                                            <h5 className="d-inline"><span class="badge badge-secondary">Javascript</span></h5>
+                                            <h5 className="d-inline"><span class="badge badge-secondary">JavaScript</span></h5>
                                         </li>
                                         <li className="d-inline ml-2">
                                             <h5 className="d-inline"><span class="badge badge-secondary">HTML</span></h5>
                                         </li>
                                         <li className="d-inline ml-2">
-                                            <h5 className="d-inline"><span class="badge badge-secondary">Bootstrap</span></h5>
+                                            <h5 className="d-inline"><span class="badge badge-secondary">BootStrap</span></h5>
                                         </li>
                                     </ul>
                                 </div>
