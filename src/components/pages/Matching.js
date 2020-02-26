@@ -14,9 +14,9 @@ class Matching extends React.Component{
     }
 
     async componentDidMount(){
-        const resM = await fetch(`http://192.168.1.219:3001/matching`);
+        const resM = await fetch(`http://172.20.10.2:3001/matching`);
         const jsonM = await resM.json()
-        const resO = await fetch(`http://192.168.1.219:3001/offers`)
+        const resO = await fetch(`http://172.20.10.2:3001/offers`)
         const jsonO = await resO.json()
             this.setState({
                 listMat: jsonM.data , listEn: jsonO.data            
